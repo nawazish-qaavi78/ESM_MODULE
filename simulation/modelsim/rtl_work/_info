@@ -1,0 +1,85 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/simulation/modelsim
+vESM
+!s110 1741595838
+!i10b 1
+!s100 jJK22cRNI7GljiC1AjfSm3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IB:gd0=4XgD8[RO5[NGPI<2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1741595804
+8C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v
+FC:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v
+!i122 0
+L0 1 16
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1741595838.000000
+!s107 C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE|C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE
+Z5 tCvgOpt 0
+n@e@s@m
+vInstructionBuffer
+Z6 !s110 1741595839
+!i10b 1
+!s100 VQziT>MX=CI]iUEi<=3:E1
+R1
+IKjMF_EdEK<aeJj8iLIUOF1
+R2
+R0
+w1741594594
+8C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v
+FC:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v
+!i122 1
+L0 1 26
+R3
+r1
+!s85 0
+31
+Z7 !s108 1741595839.000000
+!s107 C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components|C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components
+R5
+n@instruction@buffer
+vtb
+R6
+!i10b 1
+!s100 a[Mh?zl=l64NT;YOEWPjF3
+R1
+IB::ML3:an]8R<[WT8=QPf0
+R2
+R0
+w1741595619
+8C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v
+FC:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v
+!i122 2
+L0 3 56
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test|C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test
+R5
