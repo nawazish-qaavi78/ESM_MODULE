@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESM
-Mon Mar 10 14:11:53 2025
+Mon Mar 10 23:36:23 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -19,11 +19,14 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  11. Source assignments for InstructionBuffer:buffer|altsyncram:Instr_buffer_rtl_0|altsyncram_43n1:auto_generated
  12. Parameter Settings for User Entity Instance: Top-level Entity: |ESM
  13. Parameter Settings for User Entity Instance: InstructionBuffer:buffer
- 14. Parameter Settings for Inferred Entity Instance: InstructionBuffer:buffer|altsyncram:Instr_buffer_rtl_0
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 14. Parameter Settings for User Entity Instance: ESM_Core:Core
+ 15. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA
+ 16. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table
+ 17. Parameter Settings for Inferred Entity Instance: InstructionBuffer:buffer|altsyncram:Instr_buffer_rtl_0
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -50,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 10 14:11:53 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 10 23:36:23 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
@@ -181,6 +184,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
 ; ESM.v                            ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v                          ;         ;
 ; components/InstructionBuffer.v   ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v ;         ;
+; components/ESM_Core.v            ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v          ;         ;
+; components/ESM_Core_IDA.v        ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v      ;         ;
+; components/IRT.v                 ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v               ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                   ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                            ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                      ;         ;
@@ -297,6 +303,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Instr_word_size ; 16    ; Signed Integer                              ;
 ; bs              ; 16    ; Signed Integer                              ;
 +-----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ESM_Core:Core ;
++-----------------------+-------+----------------------------+
+; Parameter Name        ; Value ; Type                       ;
++-----------------------+-------+----------------------------+
+; Instruction_word_size ; 16    ; Signed Integer             ;
+; bs                    ; 16    ; Signed Integer             ;
++-----------------------+-------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA ;
++-----------------------+-------+---------------------------------------------+
+; Parameter Name        ; Value ; Type                                        ;
++-----------------------+-------+---------------------------------------------+
+; Instruction_word_size ; 16    ; Signed Integer                              ;
+; bs                    ; 16    ; Signed Integer                              ;
++-----------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table ;
++-----------------------+-------+-----------------------------------------------------------+
+; Parameter Name        ; Value ; Type                                                      ;
++-----------------------+-------+-----------------------------------------------------------+
+; Instruction_word_size ; 16    ; Signed Integer                                            ;
+; bs                    ; 16    ; Signed Integer                                            ;
++-----------------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -417,7 +456,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Mar 10 14:11:42 2025
+    Info: Processing started: Mon Mar 10 23:36:15 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -425,10 +464,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file esm.v
     Info (12023): Found entity 1: ESM File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file components/instructionbuffer.v
     Info (12023): Found entity 1: InstructionBuffer File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file components/esm_core.v
+    Info (12023): Found entity 1: ESM_Core File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file components/esm_core_ida.v
+    Info (12023): Found entity 1: ESM_Core_IDA File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file components/irt.v
+    Info (12023): Found entity 1: IRT File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 1
 Info (12127): Elaborating entity "ESM" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at ESM.v(11): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 11
 Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 13
 Warning (10036): Verilog HDL or VHDL warning at InstructionBuffer.v(12): object "valid_entries" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v Line: 12
+Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 15
+Info (12128): Elaborating entity "ESM_Core_IDA" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 9
+Info (12128): Elaborating entity "IRT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 9
+Warning (10036): Verilog HDL or VHDL warning at IRT.v(11): object "IRT_RD" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at IRT.v(12): object "IRT_RS" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 12
+Warning (10240): Verilog HDL Always Construct warning at IRT.v(21): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 21
+Warning (12158): Entity "IRT" contains only dangling pins File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 9
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "InstructionBuffer:buffer|Instr_buffer_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -473,10 +525,10 @@ Info (21057): Implemented 54 device resources after synthesis - the final resour
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 4 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Mon Mar 10 14:11:53 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Mon Mar 10 23:36:23 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:16
 
 

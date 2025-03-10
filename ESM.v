@@ -12,5 +12,7 @@ module ESM #(
 		
 	InstructionBuffer #(Instruction_word_size, bs) buffer (clk, rst, Instr_in, buffer_index, Instr_out);
 	
+	ESM_Core #(Instruction_word_size, bs) Core (Instr_in, clk, rst);
+	
 
 endmodule

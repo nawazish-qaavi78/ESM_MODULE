@@ -1,0 +1,8 @@
+module ESM_Core_IDA #(
+	parameter Instruction_word_size = 16
+) (
+	input clk, rst,
+	input [Instruction_word_size-1:0] Instr_in
+);
+
+endmodule
