@@ -1,5 +1,5 @@
 module InstructionBuffer #(
-	parameter Instr_word_size = 16,
+	parameter Instr_word_size = 32,
 	parameter bs = 16
 )(
 	input clk, rst, 
