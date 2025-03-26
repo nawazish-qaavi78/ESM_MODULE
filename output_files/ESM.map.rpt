@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESM
-Wed Mar 26 11:06:20 2025
+Wed Mar 26 11:42:32 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -53,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 26 11:06:20 2025       ;
+; Analysis & Synthesis Status     ; Successful - Wed Mar 26 11:42:32 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
@@ -448,7 +448,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -458,7 +458,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Mar 26 11:06:13 2025
+    Info: Processing started: Wed Mar 26 11:42:20 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -484,6 +484,8 @@ Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(15): truncated
 Info (12128): Elaborating entity "IRT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 18
 Warning (10036): Verilog HDL or VHDL warning at IRT.v(14): object "IRT_RD" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 14
 Warning (10036): Verilog HDL or VHDL warning at IRT.v(15): object "IRT_RS" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 15
+Warning (10230): Verilog HDL assignment warning at IRT.v(12): truncated value with size 32 to match size of target (16) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 12
+Warning (10230): Verilog HDL assignment warning at IRT.v(30): truncated value with size 32 to match size of target (16) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 30
 Warning (10240): Verilog HDL Always Construct warning at IRT.v(25): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 25
 Warning (12158): Entity "IRT" contains only dangling pins File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 18
 Info (19000): Inferred 1 megafunctions from design logic
@@ -533,10 +535,10 @@ Info (21057): Implemented 104 device resources after synthesis - the final resou
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 4 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4831 megabytes
-    Info: Processing ended: Wed Mar 26 11:06:20 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4830 megabytes
+    Info: Processing ended: Wed Mar 26 11:42:32 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
 
 

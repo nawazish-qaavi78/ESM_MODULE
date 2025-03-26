@@ -9,7 +9,7 @@ module IRT #(
 
 	integer i;
 	
-	wire [regnum-1:0] current_rs = (rs1 ? {{regnum{1'b1}}<<rs1} : {regnum{1'b0}}) | (rs2 ? {{regnum{1'b1}}<<rs2} : {regnum{1'b0}});
+	wire [regnum-1:0] current_rs = (rs1 ? {1<<rs1} : {regnum{1'b0}}) | (rs2 ? {1<<rs2} : {regnum{1'b0}});
 	
 	reg [regnum-1:0] IRT_RD [0:bs-1];
 	reg [regnum-1:0] IRT_RS [0:bs-1];
@@ -27,7 +27,7 @@ module IRT #(
 			IRT_RD[i] <= {{(regnum-1){1'b1}}, 1'b0};
 			IRT_RS[i] <= {{(regnum-1){1'b1}}, 1'b0};
 		end else begin
-			IRT_RD[buffer_index] <= rd ? {{regnum{1'b1}}<<rd} : {regnum{1'b0}};
+			IRT_RD[buffer_index] <= rd ? {1<<rd} : {regnum{1'b0}};
 			IRT_RS[buffer_index] <= current_rs;
 		end
 	end
