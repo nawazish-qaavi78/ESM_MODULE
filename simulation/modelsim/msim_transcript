@@ -13,70 +13,74 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:46:57 on Mar 26,2025
+# Start time: 12:09:14 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v 
 # -- Compiling module ESM
 # 
 # Top level modules:
 # 	ESM
-# End time: 11:46:57 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 12:09:14 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:46:57 on Mar 26,2025
+# Start time: 12:09:14 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v 
 # -- Compiling module InstructionBuffer
 # 
 # Top level modules:
 # 	InstructionBuffer
-# End time: 11:46:57 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 12:09:14 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:46:57 on Mar 26,2025
+# Start time: 12:09:14 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v 
 # -- Compiling module ESM_Core
 # 
 # Top level modules:
 # 	ESM_Core
-# End time: 11:46:57 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 12:09:14 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:46:57 on Mar 26,2025
+# Start time: 12:09:14 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v 
 # -- Compiling module ESM_Core_IDA
 # 
 # Top level modules:
 # 	ESM_Core_IDA
-# End time: 11:46:57 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 12:09:15 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:46:57 on Mar 26,2025
+# Start time: 12:09:15 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v 
 # -- Compiling module IRT
 # 
 # Top level modules:
 # 	IRT
-# End time: 11:46:58 on Mar 26,2025, Elapsed time: 0:00:01
+# End time: 12:09:15 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:46:58 on Mar 26,2025
+# Start time: 12:09:15 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 11:46:58 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 12:09:15 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 11:46:58 on Mar 26,2025
+# Start time: 12:09:15 on Mar 26,2025
 # Loading work.tb
+# Loading work.ESM
+# Loading work.InstructionBuffer
+# Loading work.ESM_Core
+# Loading work.ESM_Core_IDA
 # Loading work.IRT
 # 
 # add wave *
@@ -85,20 +89,36 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(59)
-#    Time: 210 ns  Iteration: 0  Instance: /tb
-# Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 59
+# ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(64)
+#    Time: 190 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 64
 add wave -position insertpoint  \
-sim:/tb/dut/current_rs
+sim:/tb/dut/Core/IDA/irt_table/current_rs
 add wave -position insertpoint  \
-sim:/tb/dut/IRT_RD
+sim:/tb/dut/Core/IDA/irt_table/IRT_RD
 add wave -position insertpoint  \
-sim:/tb/dut/IRT_RS
+sim:/tb/dut/Core/IDA/irt_table/IRT_RS
+add wave -position insertpoint  \
+sim:/tb/dut/Core/IDA/irt_table/rs1
+add wave -position insertpoint  \
+sim:/tb/dut/Core/IDA/irt_table/rs2
+add wave -position insertpoint  \
+sim:/tb/dut/Core/IDA/irt_table/rd
 restart
 run -all
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(59)
-#    Time: 210 ns  Iteration: 0  Instance: /tb
-# Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 59
+# ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(64)
+#    Time: 190 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 64
+add wave -position insertpoint  \
+sim:/tb/dut/buffer_index
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(64)
+#    Time: 190 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 64
