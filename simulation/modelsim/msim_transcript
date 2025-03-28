@@ -122,3 +122,5 @@ run -all
 # ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(64)
 #    Time: 190 ns  Iteration: 0  Instance: /tb
 # Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 64
+# End time: 13:54:51 on Mar 26,2025, Elapsed time: 1:45:36
+# Errors: 0, Warnings: 0
