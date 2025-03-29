@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESM
-Fri Mar 28 12:56:27 2025
+Sat Mar 29 12:07:02 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -22,11 +22,13 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  14. Parameter Settings for User Entity Instance: ESM_Core:Core
  15. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA
  16. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table
- 17. Parameter Settings for Inferred Entity Instance: InstructionBuffer:buffer|altsyncram:Instr_buffer_rtl_0
- 18. altsyncram Parameter Settings by Entity Instance
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table
+ 18. Parameter Settings for Inferred Entity Instance: InstructionBuffer:buffer|altsyncram:Instr_buffer_rtl_0
+ 19. altsyncram Parameter Settings by Entity Instance
+ 20. Port Connectivity Checks: "ESM_Core:Core|ESM_Core_IDA:IDA"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -53,7 +55,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar 28 12:56:27 2025       ;
+; Analysis & Synthesis Status     ; Successful - Sat Mar 29 12:07:02 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
@@ -187,6 +189,7 @@ https://fpgasoftware.intel.com/eula.
 ; components/ESM_Core.v            ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v          ;         ;
 ; components/ESM_Core_IDA.v        ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v      ;         ;
 ; components/IRT.v                 ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v               ;         ;
+; components/IDT.v                 ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v               ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                   ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                            ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                      ;         ;
@@ -341,6 +344,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; bs             ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: InstructionBuffer:buffer|altsyncram:Instr_buffer_rtl_0 ;
 +------------------------------------+----------------------+---------------------------------------------+
@@ -422,6 +435,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+--------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ESM_Core:Core|ESM_Core_IDA:IDA"                                                                                       ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                  ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; independent_instr ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -458,7 +480,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 28 12:56:19 2025
+    Info: Processing started: Sat Mar 29 12:06:54 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -472,23 +494,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file compone
     Info (12023): Found entity 1: ESM_Core_IDA File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file components/irt.v
     Info (12023): Found entity 1: IRT File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file components/idt.v
+    Info (12023): Found entity 1: IDT File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v Line: 1
 Info (12127): Elaborating entity "ESM" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at ESM.v(11): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 11
 Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 13
 Warning (10036): Verilog HDL or VHDL warning at InstructionBuffer.v(12): object "valid_entries" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v Line: 12
 Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 15
 Info (12128): Elaborating entity "ESM_Core_IDA" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 11
-Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(13): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 13
-Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(14): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 14
-Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(15): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 15
-Info (12128): Elaborating entity "IRT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 18
-Warning (10036): Verilog HDL or VHDL warning at IRT.v(16): object "IRT_RS" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 16
-Warning (10036): Verilog HDL or VHDL warning at IRT.v(18): object "raw" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 18
-Warning (10230): Verilog HDL assignment warning at IRT.v(13): truncated value with size 32 to match size of target (16) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 13
-Warning (10230): Verilog HDL assignment warning at IRT.v(33): truncated value with size 32 to match size of target (16) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 33
-Warning (10240): Verilog HDL Always Construct warning at IRT.v(28): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 28
-Warning (10240): Verilog HDL Always Construct warning at IRT.v(39): inferring latch(es) for variable "j", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 39
-Warning (12158): Entity "IRT" contains only dangling pins File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 18
+Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(16): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 16
+Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(17): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 17
+Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(18): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 18
+Info (12128): Elaborating entity "IRT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 21
+Warning (10230): Verilog HDL assignment warning at IRT.v(14): truncated value with size 32 to match size of target (16) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 14
+Warning (10230): Verilog HDL assignment warning at IRT.v(36): truncated value with size 32 to match size of target (16) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 36
+Warning (10240): Verilog HDL Always Construct warning at IRT.v(31): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 31
+Warning (10240): Verilog HDL Always Construct warning at IRT.v(42): inferring latch(es) for variable "j", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 42
+Info (12128): Elaborating entity "IDT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 22
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "InstructionBuffer:buffer|Instr_buffer_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -525,6 +547,7 @@ Info (12133): Instantiated megafunction "InstructionBuffer:buffer|altsyncram:Ins
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_03n1.tdf
     Info (12023): Found entity 1: altsyncram_03n1 File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/db/altsyncram_03n1.tdf Line: 28
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -536,10 +559,10 @@ Info (21057): Implemented 104 device resources after synthesis - the final resou
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 4 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
     Info: Peak virtual memory: 4830 megabytes
-    Info: Processing ended: Fri Mar 28 12:56:27 2025
+    Info: Processing ended: Sat Mar 29 12:07:02 2025
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:17
 
 

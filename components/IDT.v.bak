@@ -1,0 +1,7 @@
+module IDT #(
+	parameter bs = 16
+) (
+	input clk, rst
+);
+	
+endmodule
