@@ -20,6 +20,6 @@ module ESM_Core_IDA #(
 
 	
 	IRT #(bs, regnum) irt_table (clk, rst, buffer_index, rd, rs1, rs2, current_dept);
-	IDT #(bs) idt_table (clk, rst, buffer_index, current_dept, independent_instr);
+	IDT #(bs) idt_table (clk, rst, buffer_index, current_dept, valid_entries, independent_instr);
 
 endmodule

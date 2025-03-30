@@ -4,6 +4,7 @@ module IDT #(
 	input clk, rst,
 	input [$clog2(bs)-1:0] buffer_index,
 	input [0:bs-1] current_dept,
+	input [0:bs-1] valid_entries,
 	output reg [0:bs-1] independent_instr
 );
 	
@@ -30,7 +31,7 @@ module IDT #(
 	
 	always@(*) begin
 		for(j=0; j<bs; j= j+1) 
-			independent_instr[j] = ~(|idt[j]); // if independent[j] = 1 then the instruction at j is independent
+			independent_instr[j] = valid_entries[j] & (~(|idt[j])); // if independent[j] = 1 then the instruction at j is independent
 	end
 	
 endmodule

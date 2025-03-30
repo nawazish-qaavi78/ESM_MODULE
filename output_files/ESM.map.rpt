@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESM
-Sun Mar 30 11:52:26 2025
+Sun Mar 30 13:39:31 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,15 +16,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. User-Specified and Inferred Latches
   9. General Register Statistics
  10. Parameter Settings for User Entity Instance: Top-level Entity: |ESM
- 11. Parameter Settings for User Entity Instance: InstructionBuffer:buffer
+ 11. Parameter Settings for User Entity Instance: InstructionBuffer:Buffer
  12. Parameter Settings for User Entity Instance: ESM_Core:Core
  13. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA
  14. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table
  15. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table
- 16. Port Connectivity Checks: "ESM_Core:Core|ESM_Core_IDA:IDA"
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+ 16. Parameter Settings for User Entity Instance: BufferValidator:Validator
+ 17. Port Connectivity Checks: "ESM_Core:Core|ESM_Core_IDA:IDA"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -51,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 30 11:52:26 2025       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 30 13:39:31 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
@@ -186,6 +187,7 @@ https://fpgasoftware.intel.com/eula.
 ; components/ESM_Core_IDA.v        ; yes             ; User Verilog HDL File  ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v      ;         ;
 ; components/IRT.v                 ; yes             ; User Verilog HDL File  ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v               ;         ;
 ; components/IDT.v                 ; yes             ; User Verilog HDL File  ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v               ;         ;
+; components/BufferValidator.v     ; yes             ; User Verilog HDL File  ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/BufferValidator.v   ;         ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -222,7 +224,7 @@ https://fpgasoftware.intel.com/eula.
 ; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name       ; Library Name ;
 +-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------------+--------------+
 ; |ESM                          ; 692 (4)             ; 36 (4)                    ; 0                 ; 0          ; 68   ; 0            ; |ESM                          ; ESM               ; work         ;
-;    |InstructionBuffer:buffer| ; 688 (688)           ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|InstructionBuffer:buffer ; InstructionBuffer ; work         ;
+;    |InstructionBuffer:Buffer| ; 688 (688)           ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|InstructionBuffer:Buffer ; InstructionBuffer ; work         ;
 +-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,106 +234,106 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------+---------------------------------------+------------------------+
 ; Latch Name                                           ; Latch Enable Signal                   ; Free of Timing Hazards ;
 +------------------------------------------------------+---------------------------------------+------------------------+
-; InstructionBuffer:buffer|Instr_buffer~0              ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~256            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~128            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~384            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~64             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~320            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~192            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~448            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~32             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~288            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~160            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~416            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~96             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~352            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~224            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~480            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~1              ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~65             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~33             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~97             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~257            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~321            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~289            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~353            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~129            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~193            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~161            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~225            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~385            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~449            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~417            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~481            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~2              ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~258            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~130            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~386            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~66             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~322            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~194            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~450            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~34             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~290            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~162            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~418            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~98             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~354            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~226            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~482            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~3              ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~67             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~35             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~99             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~259            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~323            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~291            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~355            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~131            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~195            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~163            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~227            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~387            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~451            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~419            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~483            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~4              ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~260            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~132            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~388            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~68             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~324            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~196            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~452            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~36             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~292            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~164            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~420            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~100            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~356            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~228            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~484            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~5              ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~69             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~37             ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~101            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~261            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~325            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~293            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~357            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~133            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~197            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~165            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~229            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~389            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~453            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~421            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~485            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~6              ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~262            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~134            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
-; InstructionBuffer:buffer|Instr_buffer~390            ; InstructionBuffer:buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~0              ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~256            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~128            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~384            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~64             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~320            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~192            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~448            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~32             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~288            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~160            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~416            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~96             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~352            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~224            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~480            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~1              ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~65             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~33             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~97             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~257            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~321            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~289            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~353            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~129            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~193            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~161            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~225            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~385            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~449            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~417            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~481            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~2              ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~258            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~130            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~386            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~66             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~322            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~194            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~450            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~34             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~290            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~162            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~418            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~98             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~354            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~226            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~482            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~3              ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~67             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~35             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~99             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~259            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~323            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~291            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~355            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~131            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~195            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~163            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~227            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~387            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~451            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~419            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~483            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~4              ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~260            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~132            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~388            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~68             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~324            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~196            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~452            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~36             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~292            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~164            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~420            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~100            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~356            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~228            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~484            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~5              ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~69             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~37             ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~101            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~261            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~325            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~293            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~357            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~133            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~197            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~165            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~229            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~389            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~453            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~421            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~485            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~6              ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~262            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~134            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
+; InstructionBuffer:Buffer|Instr_buffer~390            ; InstructionBuffer:Buffer|Instr_buffer ; yes                    ;
 ; Number of user-specified and inferred latches = 512  ;                                       ;                        ;
 +------------------------------------------------------+---------------------------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -364,7 +366,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: InstructionBuffer:buffer ;
+; Parameter Settings for User Entity Instance: InstructionBuffer:Buffer ;
 +-----------------+-------+---------------------------------------------+
 ; Parameter Name  ; Value ; Type                                        ;
 +-----------------+-------+---------------------------------------------+
@@ -419,6 +421,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BufferValidator:Validator ;
++-----------------------+-------+----------------------------------------+
+; Parameter Name        ; Value ; Type                                   ;
++-----------------------+-------+----------------------------------------+
+; Instruction_word_size ; 32    ; Signed Integer                         ;
+; bs                    ; 16    ; Signed Integer                         ;
++-----------------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ESM_Core:Core|ESM_Core_IDA:IDA"                                                                  ;
 +-------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -465,7 +478,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Mar 30 11:52:08 2025
+    Info: Processing started: Sun Mar 30 13:39:23 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -481,11 +494,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file compone
     Info (12023): Found entity 1: IRT File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file components/idt.v
     Info (12023): Found entity 1: IDT File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file components/buffervalidator.v
+    Info (12023): Found entity 1: BufferValidator File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/BufferValidator.v Line: 1
 Info (12127): Elaborating entity "ESM" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at ESM.v(15): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 15
-Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 23
+Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:Buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 18
 Critical Warning (10237): Verilog HDL warning at InstructionBuffer.v(14): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v Line: 14
-Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 25
+Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 20
 Info (12128): Elaborating entity "ESM_Core_IDA" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 14
 Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(17): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 17
 Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(18): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 18
@@ -496,6 +511,7 @@ Warning (10230): Verilog HDL assignment warning at IRT.v(36): truncated value wi
 Warning (10240): Verilog HDL Always Construct warning at IRT.v(31): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 31
 Warning (10240): Verilog HDL Always Construct warning at IRT.v(42): inferring latch(es) for variable "j", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 42
 Info (12128): Elaborating entity "IDT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 23
+Info (12128): Elaborating entity "BufferValidator" for hierarchy "BufferValidator:Validator" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -508,8 +524,8 @@ Info (21057): Implemented 760 device resources after synthesis - the final resou
     Info (21061): Implemented 692 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 4827 megabytes
-    Info: Processing ended: Sun Mar 30 11:52:26 2025
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Processing ended: Sun Mar 30 13:39:31 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

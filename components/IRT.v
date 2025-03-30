@@ -52,7 +52,7 @@ module IRT #(
 					waw[j] = IRT_RD[j][rd];
 				end else begin
 					raw[j] = 1'b0; // since an instruction can't be dependent on it self
-					war[j] = 1'b0;
+					war[j] = 1'b0; 
 					waw[j] = 1'b0;
 				end
 			end

@@ -8,21 +8,18 @@ module ESM #(
 );
 	reg [$clog2(bs)-1:0] buffer_index = 0;
 	
-	reg [0:bs-1] valid_entries;
+	wire [0:bs-1] valid_entries;
 	
 	always@(posedge clk, posedge rst) // for testing purpose, later driven by ESM_core
 		if(rst) buffer_index <= 0;
 		else buffer_index <= buffer_index + 1;
 		
-	always@(posedge clk, posedge rst) begin
-		if(rst) valid_entries <= 0;
-		else valid_entries[buffer_index] <= |Instr_in; // i.e. if instr_in is non-zero then it is a valid instruciton
-	end
 		
-		
-	InstructionBuffer #(Instruction_word_size, bs) buffer (clk, rst, Instr_in, buffer_index, Instr_out);
+	InstructionBuffer #(Instruction_word_size, bs) Buffer (clk, rst, Instr_in, buffer_index, Instr_out);
 	
 	ESM_Core #(Instruction_word_size, bs) Core (Instr_in, clk, rst, RegWrite, ALUSrc, buffer_index, valid_entries);
+	 
+	BufferValidator #(Instruction_word_size, bs) Validator (clk, rst, Instr_in, buffer_index, valid_entries); // made a separate module for this register just so it is easier to understand when viewed in netlist viewer
 	
 
 endmodule

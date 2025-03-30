@@ -11,6 +11,7 @@ vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing
 vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v}
 vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v}
 vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v}
+vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/BufferValidator.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v}
 
