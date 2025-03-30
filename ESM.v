@@ -11,8 +11,8 @@ module ESM #(
 	reg [0:bs-1] valid_entries;
 	
 	always@(posedge clk, posedge rst) // for testing purpose, later driven by ESM_core
-		if(rst) buffer_index = 0;
-		else buffer_index = buffer_index + 1;
+		if(rst) buffer_index <= 0;
+		else buffer_index <= buffer_index + 1;
 		
 	always@(posedge clk, posedge rst) begin
 		if(rst) valid_entries <= 0;
