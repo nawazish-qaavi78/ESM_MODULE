@@ -33,25 +33,25 @@ module tb;
         // Apply reset
         #10 rst = 0;
         
-        // Test Case 1: Provide different instructions to ESM
-        #10 Instr_in = 32'h00C58533; // Example R-type instruction (ADD x10, x11, x12)
-        RegWrite = 1; ALUSrc = 0;
-        
-        #10 Instr_in = 32'h00450613; // Example I-type instruction (ADDI x12, x10, 4)
+        // Test Case 1: Independent instruction
+        #10 Instr_in = 32'h00C58533; // ADD x10, x11, x12 (independent)
         RegWrite = 1; ALUSrc = 1;
         
-        #10 Instr_in = 32'h00000013; // Example NOP (No Operation)
-        RegWrite = 0; ALUSrc = 0;
-        
-        // Test Case 2: Edge cases where rd, rs1, or rs2 is 0
-        #10 Instr_in = 32'h00058533; // ADD x0, x11, x12
-        RegWrite = 1; ALUSrc = 0;
-        
-        #10 Instr_in = 32'h00000613; // ADDI x12, x0, 0
+        // Test Case 2: RAW dependency (Read After Write)
+        #10 Instr_in = 32'h00A60533; // ADD x10, x12, x13 (depends on x10 from previous instruction)
         RegWrite = 1; ALUSrc = 1;
         
-        #10 Instr_in = 32'h00450013; // ADDI x0, x10, 4
-        RegWrite = 0; ALUSrc = 1;
+        // Test Case 3: WAW dependency (Write After Write)
+        #10 Instr_in = 32'h00B58533; // ADD x10, x11, x14 (x10 is being written again)
+        RegWrite = 1; ALUSrc = 1;
+        
+        // Test Case 4: WAR dependency (Write After Read)
+        #10 Instr_in = 32'h00D50533; // ADD x11, x10, x15 (x10 was read before, now it's being written)
+        RegWrite = 1; ALUSrc = 1;
+        
+        // Test Case 5: Completely independent instruction
+        #10 Instr_in = 32'h00E68633; // ADD x12, x13, x14 (no dependencies)
+        RegWrite = 1; ALUSrc = 1;
         
         // Hold and observe behavior
         #50;

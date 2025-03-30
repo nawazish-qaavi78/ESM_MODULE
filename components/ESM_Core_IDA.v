@@ -6,6 +6,7 @@ module ESM_Core_IDA #(
 	input clk, rst, RegWrite, ALUSrc,
 	input [$clog2(bs)-1:0] buffer_index,
 	input [Instruction_word_size-1:0] Instr_in,
+	input [0:bs-1] valid_entries,
 	output [0:bs-1] independent_instr
 );
 

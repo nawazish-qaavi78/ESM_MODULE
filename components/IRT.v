@@ -20,18 +20,18 @@ module IRT #(
 	reg [0:bs-1] war = {bs{1'b1}};
 	reg [0:bs-1] waw = {bs{1'b1}};
 	
-	// by default all are 1, since that will mean no independent instruction detected yet
+	// by default all are 0
 	initial begin
 		for(i=0; i<bs; i=i+1) begin
-			IRT_RD[i] <= {{(regnum-1){1'b1}}, 1'b0}; // no instruction is dependent on x0 since it is always grounded 
-			IRT_RS[i] <= {{(regnum-1){1'b1}}, 1'b0};
+			IRT_RD[i] <= {(regnum){1'b0}}; 
+			IRT_RS[i] <= {(regnum){1'b0}};
 		end
 	end
 	
 	always@(posedge clk, posedge rst) begin
 		if(rst) for(i=0; i<bs; i=i+1) begin
-			IRT_RD[i] <= {{(regnum-1){1'b1}}, 1'b0};
-			IRT_RS[i] <= {{(regnum-1){1'b1}}, 1'b0};
+			IRT_RD[i] <= {(regnum){1'b0}};
+			IRT_RS[i] <= {(regnum){1'b0}};
 		end else begin
 			IRT_RD[buffer_index] <= rd ? {1<<rd} : {regnum{1'b0}};
 			IRT_RS[buffer_index] <= current_rs;

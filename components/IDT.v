@@ -12,13 +12,13 @@ module IDT #(
 	
 	initial begin
 		for(i=0; i<bs; i=i+1) 
-			idt[i] = {bs{1'b1}};
+			idt[i] = {bs{1'b0}}; // by default all are independent instructions
 	end
 	
 	always@(posedge clk, posedge rst) begin
 		if(rst) begin
 			for(i=0; i<bs; i=i+1) 
-				idt[i] = {bs{1'b1}};
+				idt[i] = {bs{1'b0}};
 		end else begin
 			idt[buffer_index] = current_dept; // updating the current buffer_index
 			// since new instruction is being added at buffer_index that means previous instr is executed and the instructions that are dependent on the prev one are now free to execute
