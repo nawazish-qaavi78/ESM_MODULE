@@ -1,0 +1,10 @@
+module MappingTable #(
+	parameter bs = 16
+) (
+	input clk, rst,
+	input [0:bs-1] candidate_list
+);
+
+	
+
+endmodule

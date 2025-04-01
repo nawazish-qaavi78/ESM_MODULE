@@ -1,0 +1,16 @@
+module PRNG #(
+	parameter bs = 16
+) (
+	input clk, rst
+);
+
+	wire feedback = q[31]^q[29]^q[28]^ q[27]^ q[23]^q[20]^ q[19]^q[17]^ q[15]^q[14]^q[12]^ q[11]^q[9]^ q[4]^ q[3]^q[2];
+	 
+	always @(posedge clk or posedge rst)
+	  if (rst) 
+		 q <= 32'haaaaaaaa;
+	  else if (ce)
+		 q <= {q[30:0], feedback} ;
+	endmodule
+
+endmodule

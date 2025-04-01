@@ -286,8 +286,8 @@ Instr_in[28] => Instr_in[28].IN1
 Instr_in[29] => Instr_in[29].IN1
 Instr_in[30] => Instr_in[30].IN1
 Instr_in[31] => Instr_in[31].IN1
-clk => clk.IN1
-rst => rst.IN1
+clk => clk.IN2
+rst => rst.IN2
 RegWrite => RegWrite.IN1
 ALUSrc => ALUSrc.IN1
 buffer_index[0] => buffer_index[0].IN1
@@ -2637,6 +2637,120 @@ independent_instr[3] <= independent_instr.DB_MAX_OUTPUT_PORT_TYPE
 independent_instr[2] <= independent_instr.DB_MAX_OUTPUT_PORT_TYPE
 independent_instr[1] <= independent_instr.DB_MAX_OUTPUT_PORT_TYPE
 independent_instr[0] <= independent_instr.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ESM|ESM_Core:Core|ESM_Core_IIM:IIM
+clk => clk.IN3
+rst => rst.IN3
+independent_instr[15] => independent_instr[15].IN1
+independent_instr[14] => independent_instr[14].IN1
+independent_instr[13] => independent_instr[13].IN1
+independent_instr[12] => independent_instr[12].IN1
+independent_instr[11] => independent_instr[11].IN1
+independent_instr[10] => independent_instr[10].IN1
+independent_instr[9] => independent_instr[9].IN1
+independent_instr[8] => independent_instr[8].IN1
+independent_instr[7] => independent_instr[7].IN1
+independent_instr[6] => independent_instr[6].IN1
+independent_instr[5] => independent_instr[5].IN1
+independent_instr[4] => independent_instr[4].IN1
+independent_instr[3] => independent_instr[3].IN1
+independent_instr[2] => independent_instr[2].IN1
+independent_instr[1] => independent_instr[1].IN1
+independent_instr[0] => independent_instr[0].IN1
+
+
+|ESM|ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list
+clk => candidate_list[15]~reg0.CLK
+clk => candidate_list[14]~reg0.CLK
+clk => candidate_list[13]~reg0.CLK
+clk => candidate_list[12]~reg0.CLK
+clk => candidate_list[11]~reg0.CLK
+clk => candidate_list[10]~reg0.CLK
+clk => candidate_list[9]~reg0.CLK
+clk => candidate_list[8]~reg0.CLK
+clk => candidate_list[7]~reg0.CLK
+clk => candidate_list[6]~reg0.CLK
+clk => candidate_list[5]~reg0.CLK
+clk => candidate_list[4]~reg0.CLK
+clk => candidate_list[3]~reg0.CLK
+clk => candidate_list[2]~reg0.CLK
+clk => candidate_list[1]~reg0.CLK
+clk => candidate_list[0]~reg0.CLK
+rst => candidate_list[15]~reg0.ACLR
+rst => candidate_list[14]~reg0.ACLR
+rst => candidate_list[13]~reg0.ACLR
+rst => candidate_list[12]~reg0.ACLR
+rst => candidate_list[11]~reg0.ACLR
+rst => candidate_list[10]~reg0.ACLR
+rst => candidate_list[9]~reg0.ACLR
+rst => candidate_list[8]~reg0.ACLR
+rst => candidate_list[7]~reg0.ACLR
+rst => candidate_list[6]~reg0.ACLR
+rst => candidate_list[5]~reg0.ACLR
+rst => candidate_list[4]~reg0.ACLR
+rst => candidate_list[3]~reg0.ACLR
+rst => candidate_list[2]~reg0.ACLR
+rst => candidate_list[1]~reg0.ACLR
+rst => candidate_list[0]~reg0.ACLR
+independent_instr[15] => candidate_list[15]~reg0.DATAIN
+independent_instr[14] => candidate_list[14]~reg0.DATAIN
+independent_instr[13] => candidate_list[13]~reg0.DATAIN
+independent_instr[12] => candidate_list[12]~reg0.DATAIN
+independent_instr[11] => candidate_list[11]~reg0.DATAIN
+independent_instr[10] => candidate_list[10]~reg0.DATAIN
+independent_instr[9] => candidate_list[9]~reg0.DATAIN
+independent_instr[8] => candidate_list[8]~reg0.DATAIN
+independent_instr[7] => candidate_list[7]~reg0.DATAIN
+independent_instr[6] => candidate_list[6]~reg0.DATAIN
+independent_instr[5] => candidate_list[5]~reg0.DATAIN
+independent_instr[4] => candidate_list[4]~reg0.DATAIN
+independent_instr[3] => candidate_list[3]~reg0.DATAIN
+independent_instr[2] => candidate_list[2]~reg0.DATAIN
+independent_instr[1] => candidate_list[1]~reg0.DATAIN
+independent_instr[0] => candidate_list[0]~reg0.DATAIN
+candidate_list[15] <= candidate_list[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[14] <= candidate_list[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[13] <= candidate_list[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[12] <= candidate_list[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[11] <= candidate_list[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[10] <= candidate_list[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[9] <= candidate_list[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[8] <= candidate_list[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[7] <= candidate_list[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[6] <= candidate_list[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[5] <= candidate_list[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[4] <= candidate_list[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[3] <= candidate_list[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[2] <= candidate_list[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[1] <= candidate_list[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+candidate_list[0] <= candidate_list[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table
+clk => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+candidate_list[15] => ~NO_FANOUT~
+candidate_list[14] => ~NO_FANOUT~
+candidate_list[13] => ~NO_FANOUT~
+candidate_list[12] => ~NO_FANOUT~
+candidate_list[11] => ~NO_FANOUT~
+candidate_list[10] => ~NO_FANOUT~
+candidate_list[9] => ~NO_FANOUT~
+candidate_list[8] => ~NO_FANOUT~
+candidate_list[7] => ~NO_FANOUT~
+candidate_list[6] => ~NO_FANOUT~
+candidate_list[5] => ~NO_FANOUT~
+candidate_list[4] => ~NO_FANOUT~
+candidate_list[3] => ~NO_FANOUT~
+candidate_list[2] => ~NO_FANOUT~
+candidate_list[1] => ~NO_FANOUT~
+candidate_list[0] => ~NO_FANOUT~
+
+
+|ESM|ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng
+clk => ~NO_FANOUT~
+rst => ~NO_FANOUT~
 
 
 |ESM|BufferValidator:Validator

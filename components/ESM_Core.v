@@ -13,4 +13,5 @@ module ESM_Core #(
 	
 	ESM_Core_IDA #(Instruction_word_size, bs, regnum) IDA (clk, rst, RegWrite, ALUSrc, buffer_index, Instr_in, valid_entries, independent_instr);
 
+	ESM_Core_IIM #(bs) IIM (clk, rst, independent_instr);
 endmodule
