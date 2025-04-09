@@ -6,7 +6,7 @@ module ESM_Core_IIM #(
 );
 	wire [0:bs-1] candidate_list;
 	
-	CandidateList #(bs) list (clk, rst, independent_instr, candidate_list); // this i'm using since independent_instr is combinational and can change in between, hence saving the state you can say
+	CandidateList #(bs) list (clk, rst, independent_instr, candidate_list); // for synchronization
 
 	MappingTable #(bs) mapping_table (clk, rst, candidate_list);
 	

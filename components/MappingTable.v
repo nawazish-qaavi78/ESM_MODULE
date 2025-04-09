@@ -6,25 +6,28 @@ module MappingTable #(
 );
 	localparam bs_bits = $clog2(bs);
 	
-	integer i;
+	integer i,j;
 	
 	reg [bs_bits-1:0] mapping_table [0:bs-1];
+	reg [bs_bits-1:0] next_mapping_table [0:bs-1];
 	
 	reg [bs_bits-1:0] count = {bs_bits{1'b0}};
 	
-	always@(posedge clk, posedge rst) begin
-		if(rst) begin
-			count <= 1'b0;
-			for(i=0; i<bs; i=i+1) 
-				mapping_table[i] <= 1'b0;
-		end else begin
-			for(i=0; i<bs; i=i+1) begin
-				if(candidate_list[i]) begin
-					mapping_table[count] <= i;
-					count <= count + 1'b1;
-				end
-			end
+	always@(*) begin
+		count = 0;
+		for(i=0; i<bs; i=i+1) begin
+			if(candidate_list[i]) begin
+				next_mapping_table[count] = i;
+				count = count + 1'b1;
+			end 
 		end
+	end
+	
+	always@(posedge clk, posedge rst) begin
+		if(rst) for(j=0; j<bs; j=j+1)
+			mapping_table[j] <= 1'b0;
+		else for(j=0; j<bs; j=j+1)
+			mapping_table[j] <= next_mapping_table[j];
 	end
 
 endmodule
