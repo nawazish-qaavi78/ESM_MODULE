@@ -140,10 +140,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
-					"strict" : false
-				},
-				{
 					"name" : "Instr_in[1]",
 					"strict" : false
 				},
@@ -265,6 +261,18 @@
 				},
 				{
 					"name" : "Instr_in[31]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "ALUSrc",
 					"strict" : false
 				}
 			]

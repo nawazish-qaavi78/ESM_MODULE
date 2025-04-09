@@ -6,18 +6,24 @@ module ESM #(
 	input clk, rst, RegWrite, ALUSrc,
 	output [Instruction_word_size-1:0] Instr_out
 );
-	reg [$clog2(bs)-1:0] buffer_index = 0;
+	localparam bs_bits = $clog2(bs);
+	
+	reg [bs_bits-1:0] buffer_index = 0;
+	wire [bs_bits-1:0] next_buffer_index;
+	
+	wire valid_count;
 	
 	wire [0:bs-1] valid_entries;
 	
-	always@(posedge clk, posedge rst) // for testing purpose, later driven by ESM_core
+	always@(posedge clk, posedge rst) 
 		if(rst) buffer_index <= 0;
+		else if(valid_count) buffer_index <= next_buffer_index;
 		else buffer_index <= buffer_index + 1;
 		
 		
 	InstructionBuffer #(Instruction_word_size, bs) Buffer (clk, rst, Instr_in, buffer_index, Instr_out);
 	
-	ESM_Core #(Instruction_word_size, bs) Core (Instr_in, clk, rst, RegWrite, ALUSrc, buffer_index, valid_entries);
+	ESM_Core #(Instruction_word_size, bs) Core (Instr_in, clk, rst, RegWrite, ALUSrc, buffer_index, valid_entries, next_buffer_index, valid_count);
 	 
 	BufferValidator #(Instruction_word_size, bs) Validator (clk, rst, Instr_in, buffer_index, valid_entries); // made a separate module for this register just so it is easier to understand when viewed in netlist viewer
 	

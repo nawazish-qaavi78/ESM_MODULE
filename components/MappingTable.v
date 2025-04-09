@@ -2,7 +2,10 @@ module MappingTable #(
 	parameter bs = 16
 ) (
 	input clk, rst,
-	input [0:bs-1] candidate_list
+	input [0:bs-1] candidate_list,
+	input [$clog2(bs)-1: 0] random_number,
+	output [$clog2(bs)-1: 0] next_buffer_index,
+	output valid_count
 );
 	localparam bs_bits = $clog2(bs);
 	
@@ -11,10 +14,13 @@ module MappingTable #(
 	reg [bs_bits-1:0] mapping_table [0:bs-1];
 	reg [bs_bits-1:0] next_mapping_table [0:bs-1];
 	
-	reg [bs_bits-1:0] count = {bs_bits{1'b0}};
+	reg [bs_bits-1:0] count = {bs_bits{1'b0}}, next_count = {bs_bits{1'b0}};
 	
 	always@(*) begin
 		count = 0;
+		for(i=0; i<bs; i=i+1)
+			next_mapping_table[i] = 1'b0; // to prevent inferred latches
+			
 		for(i=0; i<bs; i=i+1) begin
 			if(candidate_list[i]) begin
 				next_mapping_table[count] = i;
@@ -29,5 +35,8 @@ module MappingTable #(
 		else for(j=0; j<bs; j=j+1)
 			mapping_table[j] <= next_mapping_table[j];
 	end
+	
+	assign next_buffer_index = count ? (mapping_table[random_number%count]) : 0;
+	assign valid_count = count? 1'b1 : 1'b0;
 
 endmodule

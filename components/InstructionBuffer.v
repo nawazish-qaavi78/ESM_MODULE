@@ -10,7 +10,7 @@ module InstructionBuffer #(
 
 	reg [Instr_word_size-1:0] Instr_buffer[0:bs-1];
 	
-	always@(posedge clk, posedge rst) begin
+	always@(posedge clk) begin
 			Instr_buffer[buffer_index] <= Instr_in;
 	end
 	
