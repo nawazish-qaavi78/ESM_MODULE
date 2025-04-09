@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESM
-Wed Apr 09 22:34:48 2025
+Thu Apr 10 01:19:44 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr 09 22:34:48 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 10 01:19:44 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
@@ -229,14 +229,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 876       ;
+; Estimate of Logic utilization (ALMs needed) ; 873       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1235      ;
-;     -- 7 input functions                    ; 9         ;
-;     -- 6 input functions                    ; 456       ;
+; Combinational ALUT usage for logic          ; 1228      ;
+;     -- 7 input functions                    ; 13        ;
+;     -- 6 input functions                    ; 453       ;
 ;     -- 5 input functions                    ; 342       ;
-;     -- 4 input functions                    ; 230       ;
-;     -- <=3 input functions                  ; 198       ;
+;     -- 4 input functions                    ; 227       ;
+;     -- <=3 input functions                  ; 193       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 852       ;
 ;                                             ;           ;
@@ -247,8 +247,8 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 1062      ;
-; Total fan-out                               ; 9197      ;
+; Maximum fan-out                             ; 1063      ;
+; Total fan-out                               ; 9180      ;
 ; Average fan-out                             ; 4.08      ;
 +---------------------------------------------+-----------+
 
@@ -258,15 +258,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                            ; Entity Name         ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |ESM                                            ; 1235 (43)           ; 852 (4)                   ; 512               ; 0          ; 68   ; 0            ; |ESM                                                                                                                                                           ; ESM                 ; work         ;
-;    |BufferValidator:Validator|                  ; 8 (8)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|BufferValidator:Validator                                                                                                                                 ; BufferValidator     ; work         ;
-;    |ESM_Core:Core|                              ; 1184 (0)            ; 832 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core                                                                                                                                             ; ESM_Core            ; work         ;
-;       |ESM_Core_IDA:IDA|                        ; 799 (8)             ; 720 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA                                                                                                                            ; ESM_Core_IDA        ; work         ;
-;          |IDT:idt_table|                        ; 390 (390)           ; 240 (240)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table                                                                                                              ; IDT                 ; work         ;
-;          |IRT:irt_table|                        ; 401 (401)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table                                                                                                              ; IRT                 ; work         ;
-;       |ESM_Core_IIM:IIM|                        ; 385 (0)             ; 112 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM                                                                                                                            ; ESM_Core_IIM        ; work         ;
+; |ESM                                            ; 1228 (58)           ; 852 (4)                   ; 512               ; 0          ; 68   ; 0            ; |ESM                                                                                                                                                           ; ESM                 ; work         ;
+;    |BufferValidator:Validator|                  ; 22 (22)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|BufferValidator:Validator                                                                                                                                 ; BufferValidator     ; work         ;
+;    |ESM_Core:Core|                              ; 1148 (0)            ; 832 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core                                                                                                                                             ; ESM_Core            ; work         ;
+;       |ESM_Core_IDA:IDA|                        ; 764 (8)             ; 720 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA                                                                                                                            ; ESM_Core_IDA        ; work         ;
+;          |IDT:idt_table|                        ; 380 (380)           ; 240 (240)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table                                                                                                              ; IDT                 ; work         ;
+;          |IRT:irt_table|                        ; 376 (376)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table                                                                                                              ; IRT                 ; work         ;
+;       |ESM_Core_IIM:IIM|                        ; 384 (0)             ; 112 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM                                                                                                                            ; ESM_Core_IIM        ; work         ;
 ;          |CandidateList:list|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list                                                                                                         ; CandidateList       ; work         ;
-;          |MappingTable:mapping_table|           ; 350 (322)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table                                                                                                 ; MappingTable        ; work         ;
+;          |MappingTable:mapping_table|           ; 349 (321)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table                                                                                                 ; MappingTable        ; work         ;
 ;             |lpm_divide:Mod0|                   ; 28 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;                |lpm_divide_42m:auto_generated|  ; 28 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
 ;                   |sign_div_unsign_7kh:divider| ; 28 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
@@ -365,8 +365,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------+---------+
 ; Inverted Register                              ; Fan out ;
 +------------------------------------------------+---------+
-; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[1]  ; 3       ;
+; buffer_index[0]                                ; 97      ;
+; buffer_index[1]                                ; 106     ;
+; buffer_index[2]                                ; 112     ;
+; buffer_index[3]                                ; 101     ;
 ; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[3]  ; 4       ;
+; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[1]  ; 3       ;
 ; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[11] ; 2       ;
 ; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[31] ; 1       ;
 ; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[29] ; 2       ;
@@ -381,7 +385,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[21] ; 1       ;
 ; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[7]  ; 1       ;
 ; ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng|q[5]  ; 1       ;
-; Total number of inverted registers = 16        ;         ;
+; Total number of inverted registers = 20        ;         ;
 +------------------------------------------------+---------+
 
 
@@ -399,8 +403,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
-; 17:1               ; 4 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; Yes        ; |ESM|buffer_index[2]                                                               ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|mapping_table[8][2] ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|mapping_table[8][1] ;
+; 18:1               ; 4 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |ESM|buffer_index[3]                                                               ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|IRT_RD                           ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|IRT_RD                           ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|IRT_RD                           ;
@@ -413,24 +417,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|IRT_RD                           ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|comb                             ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|comb                             ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|Mux8                             ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|Mux33                            ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|Mux52                            ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|Mux45                            ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[0]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[1]                           ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[2]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[3]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[4]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[5]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[6]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[7]                           ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[4]                           ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[6]                           ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[8]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[9]                           ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[10]                          ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[11]                          ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[10]                          ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[12]                          ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[13]                          ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[14]                          ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[15]                          ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|war[1]                           ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[3]                           ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[5]                           ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[7]                           ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[9]                           ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[11]                          ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[13]                          ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table|waw[15]                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
 
 
@@ -673,19 +677,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 852                         ;
 ;     CLR               ; 356                         ;
 ;     ENA CLR           ; 496                         ;
-; arriav_lcell_comb     ; 1235                        ;
+; arriav_lcell_comb     ; 1228                        ;
 ;     arith             ; 11                          ;
 ;         0 data inputs ; 4                           ;
 ;         5 data inputs ; 7                           ;
-;     extend            ; 9                           ;
-;         7 data inputs ; 9                           ;
-;     normal            ; 1210                        ;
-;         1 data inputs ; 31                          ;
-;         2 data inputs ; 102                         ;
-;         3 data inputs ; 58                          ;
-;         4 data inputs ; 228                         ;
+;     extend            ; 13                          ;
+;         7 data inputs ; 13                          ;
+;     normal            ; 1199                        ;
+;         1 data inputs ; 39                          ;
+;         2 data inputs ; 86                          ;
+;         3 data inputs ; 61                          ;
+;         4 data inputs ; 225                         ;
 ;         5 data inputs ; 335                         ;
-;         6 data inputs ; 456                         ;
+;         6 data inputs ; 453                         ;
 ;     shared            ; 5                           ;
 ;         0 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
@@ -693,8 +697,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 68                          ;
 ; stratixv_ram_block    ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 15.30                       ;
-; Average LUT depth     ; 4.78                        ;
+; Max LUT depth         ; 15.60                       ;
+; Average LUT depth     ; 4.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -713,7 +717,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Apr 09 22:34:26 2025
+    Info: Processing started: Thu Apr 10 01:19:22 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -740,9 +744,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file compone
 Info (12021): Found 1 design units, including 1 entities, in source file components/prng.v
     Info (12023): Found entity 1: PRNG File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/PRNG.v Line: 1
 Info (12127): Elaborating entity "ESM" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at ESM.v(21): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 21
-Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:Buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 24
-Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 26
+Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:Buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 28
+Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 30
 Info (12128): Elaborating entity "ESM_Core_IDA" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 16
 Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(17): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 17
 Warning (10230): Verilog HDL assignment warning at ESM_Core_IDA.v(18): truncated value with size 5 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 18
@@ -756,11 +759,10 @@ Info (12128): Elaborating entity "IDT" for hierarchy "ESM_Core:Core|ESM_Core_IDA
 Info (12128): Elaborating entity "ESM_Core_IIM" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 18
 Info (12128): Elaborating entity "CandidateList" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 16
 Info (12128): Elaborating entity "MappingTable" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 18
-Warning (10036): Verilog HDL or VHDL warning at MappingTable.v(17): object "next_count" assigned a value but never read File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v Line: 17
 Warning (10230): Verilog HDL assignment warning at MappingTable.v(26): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v Line: 26
 Warning (10230): Verilog HDL assignment warning at MappingTable.v(39): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v Line: 39
 Info (12128): Elaborating entity "PRNG" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 20
-Info (12128): Elaborating entity "BufferValidator" for hierarchy "BufferValidator:Validator" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 28
+Info (12128): Elaborating entity "BufferValidator" for hierarchy "BufferValidator:Validator" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 32
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "InstructionBuffer:Buffer|Instr_buffer_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -814,15 +816,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alt_
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1837 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1830 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 36 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 1737 logic cells
+    Info (21061): Implemented 1730 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Wed Apr 09 22:34:48 2025
+    Info: Processing ended: Thu Apr 10 01:19:44 2025
     Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Total CPU time (on all processors): 00:00:32
 
 

@@ -2,7 +2,7 @@ module InstructionBuffer #(
 	parameter Instr_word_size = 32,
 				 bs = 16
 )(
-	input clk, rst, 
+	input clk, 
 	input [Instr_word_size-1:0] Instr_in,
 	input [$clog2(bs)-1:0] buffer_index,
 	output reg [Instr_word_size-1:0] Instr_out
@@ -11,7 +11,7 @@ module InstructionBuffer #(
 	reg [Instr_word_size-1:0] Instr_buffer[0:bs-1];
 	
 	always@(posedge clk) begin
-			Instr_buffer[buffer_index] <= Instr_in;
+		Instr_buffer[buffer_index] <= Instr_in;
 	end
 	
 	always@(posedge clk) 

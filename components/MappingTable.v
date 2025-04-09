@@ -14,7 +14,7 @@ module MappingTable #(
 	reg [bs_bits-1:0] mapping_table [0:bs-1];
 	reg [bs_bits-1:0] next_mapping_table [0:bs-1];
 	
-	reg [bs_bits-1:0] count = {bs_bits{1'b0}}, next_count = {bs_bits{1'b0}};
+	reg [bs_bits-1:0] count = {bs_bits{1'b0}};
 	
 	always@(*) begin
 		count = 0;

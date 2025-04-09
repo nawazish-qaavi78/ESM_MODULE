@@ -8,20 +8,24 @@ module ESM #(
 );
 	localparam bs_bits = $clog2(bs);
 	
-	reg [bs_bits-1:0] buffer_index = 0;
+	reg [bs_bits-1:0] buffer_index = {bs_bits{1'b1}};
 	wire [bs_bits-1:0] next_buffer_index;
 	
 	wire valid_count;
 	
 	wire [0:bs-1] valid_entries;
 	
-	always@(posedge clk, posedge rst) 
-		if(rst) buffer_index <= 0;
-		else if(valid_count) buffer_index <= next_buffer_index;
-		else buffer_index <= buffer_index + 1;
+	wire proceed = (~(|Instr_in)) || (&valid_entries); // either when incoming instructions are 0, ie, all instructions are complete or when the buffer is full start executing
+	
+	always@(posedge clk, posedge rst) begin
+		if(rst) buffer_index <= {bs_bits{1'b1}};
+		else if(valid_count && proceed) buffer_index <= next_buffer_index;
+		else buffer_index <= {bs_bits{1'b1}};	
+		// why i'm doing this is because, when instructions are still filling in if buffer index is some intermediate value, then the circuit will execute the instruction regarless of the dependency
+		// hence by keeping buffer_index at the end, we can prevent this when last index is filled then proceed will be high and control will be taken over by the ESM_Core
+	end	
 		
-		
-	InstructionBuffer #(Instruction_word_size, bs) Buffer (clk, rst, Instr_in, buffer_index, Instr_out);
+	InstructionBuffer #(Instruction_word_size, bs) Buffer (clk, Instr_in, buffer_index, Instr_out);
 	
 	ESM_Core #(Instruction_word_size, bs) Core (Instr_in, clk, rst, RegWrite, ALUSrc, buffer_index, valid_entries, next_buffer_index, valid_count);
 	 
