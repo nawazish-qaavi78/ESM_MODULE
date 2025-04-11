@@ -140,11 +140,13 @@ module tb;
       #10;
     end
     
-    // Optionally, signal end of instruction stream with an all-zero instruction
-    Instr_in = 32'h00000000;
-    RegWrite = 0;
-    ALUSrc   = 0;
-    #10;
+    // signal end of instruction stream with an all-zero instruction
+    for(i=0; i<20; i=i+1) begin
+      Instr_in = 32'h00000000;
+      RegWrite = 0;
+      ALUSrc   = 0;
+      #10;
+    end
     
     $display("---- Simulation complete at time %0t ----", $time);
     $stop;

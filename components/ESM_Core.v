@@ -1,7 +1,7 @@
 module ESM_Core #(
 	parameter Instruction_word_size = 32,
 		       bs = 16,
-				 regnum = 16
+				 regnum = 32
 ) (
 	input [Instruction_word_size-1:0] Instr_in,
 	input clk, rst, RegWrite, ALUSrc,

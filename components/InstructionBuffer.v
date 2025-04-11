@@ -2,7 +2,7 @@ module InstructionBuffer #(
 	parameter Instr_word_size = 32,
 				 bs = 16
 )(
-	input clk, 
+	input clk, rst,
 	input [Instr_word_size-1:0] Instr_in,
 	input [$clog2(bs)-1:0] buffer_index,
 	output reg [Instr_word_size-1:0] Instr_out

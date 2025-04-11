@@ -1,7 +1,7 @@
 module ESM_Core_IDA #(
 	parameter Instruction_word_size = 32,
 				 bs = 16,
-				 regnum = 16
+				 regnum = 32
 ) (
 	input clk, rst, RegWrite, ALUSrc,
 	input [$clog2(bs)-1:0] buffer_index,
@@ -18,8 +18,13 @@ module ESM_Core_IDA #(
 	wire [reg_addr_bits-1:0] rs1 = Instr_in[19:15];
 	wire [reg_addr_bits-1:0] rs2 = ALUSrc ? {reg_addr_bits{1'b0}}: Instr_in[24:20]; // when alusrc is 0 we use the rs2
 
+	reg [$clog2(bs)-1:0] bufer_index_synchronizer; 
+	
+	always@(posedge clk) begin
+		bufer_index_synchronizer <= buffer_index;
+	end
 	
 	IRT #(bs, regnum) irt_table (clk, rst, buffer_index, rd, rs1, rs2, current_dept);
-	IDT #(bs) idt_table (clk, rst, buffer_index, current_dept, valid_entries, independent_instr);
+	IDT #(bs) idt_table (clk, rst, bufer_index_synchronizer, current_dept, valid_entries, independent_instr);
 
 endmodule
