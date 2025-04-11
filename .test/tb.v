@@ -174,7 +174,7 @@ module tb;
 		I17: $display("Instruction I17 is being executed");
 		I18: $display("Instruction I18 is being executed");
 		I19: $display("Instruction I19 is being executed");
-		default: $display("Random Instruction is being executed");
+		// default: $display("Random Instruction is being executed");
 	endcase
   end
 
