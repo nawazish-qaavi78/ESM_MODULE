@@ -1,10 +1,9 @@
 module MappingTable #(
 	parameter bs = 16
 ) (
-	input clk, rst, proceed,
+	input clk, rst,
 	input [0:bs-1] candidate_list,
-	input [31: 0] random_number,
-	input [$clog2(bs)-1: 0] buffer_index, buffer_index_synchronizer_1, buffer_index_synchronizer_2,
+	input [$clog2(bs)-1: 0] random_number,
 	output [$clog2(bs)-1: 0] next_buffer_index,
 	output valid_count
 );
@@ -17,18 +16,13 @@ module MappingTable #(
 	
 	reg [bs_bits-1:0] count = {bs_bits{1'b0}};
 	
-	reg [bs_bits-1: 0] next_buffer_index_reg;
-	
-	always@(posedge clk)
-		next_buffer_index_reg <= next_buffer_index;
-	
 	always@(*) begin
 		count = 0;
 		for(i=0; i<bs; i=i+1)
 			next_mapping_table[i] = 1'b0; // to prevent inferred latches
 			
 		for(i=0; i<bs; i=i+1) begin
-			if(candidate_list[i] && (i!=buffer_index && i!=buffer_index_synchronizer_1 && i!=buffer_index_synchronizer_2)) begin
+			if(candidate_list[i]) begin
 				next_mapping_table[count] = i;
 				count = count + 1'b1;
 			end 

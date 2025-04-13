@@ -2,7 +2,7 @@ module PRNG #(
 	parameter bs = 16
 ) (
 	input clk, rst,
-	output [31:0] random_number
+	output [$clog2(bs)-1:0] random_number
 );
 	 
 	localparam bs_bits = $clog2(bs);
