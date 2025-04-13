@@ -13,197 +13,112 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-<<<<<<< HEAD
 # Start time: 19:07:52 on Apr 13,2025
-=======
-# Start time: 00:13:45 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v 
 # -- Compiling module ESM
 # 
 # Top level modules:
 # 	ESM
-<<<<<<< HEAD
 # End time: 19:07:52 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:52 on Apr 13,2025
-=======
-# End time: 00:13:45 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:45 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/InstructionBuffer.v 
 # -- Compiling module InstructionBuffer
 # 
 # Top level modules:
 # 	InstructionBuffer
-<<<<<<< HEAD
 # End time: 19:07:52 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:52 on Apr 13,2025
-=======
-# End time: 00:13:45 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:45 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v 
 # -- Compiling module ESM_Core
 # 
 # Top level modules:
 # 	ESM_Core
-<<<<<<< HEAD
 # End time: 19:07:52 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:52 on Apr 13,2025
-=======
-# End time: 00:13:45 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:45 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v 
 # -- Compiling module ESM_Core_IDA
 # 
 # Top level modules:
 # 	ESM_Core_IDA
-<<<<<<< HEAD
 # End time: 19:07:52 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:52 on Apr 13,2025
-=======
-# End time: 00:13:45 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:45 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v 
 # -- Compiling module IRT
 # 
 # Top level modules:
 # 	IRT
-<<<<<<< HEAD
 # End time: 19:07:53 on Apr 13,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:53 on Apr 13,2025
-=======
-# End time: 00:13:45 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:45 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v 
 # -- Compiling module IDT
 # 
 # Top level modules:
 # 	IDT
-<<<<<<< HEAD
 # End time: 19:07:53 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/BufferValidator.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:53 on Apr 13,2025
-=======
-# End time: 00:13:45 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/BufferValidator.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:45 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/BufferValidator.v 
 # -- Compiling module BufferValidator
 # 
 # Top level modules:
 # 	BufferValidator
-<<<<<<< HEAD
 # End time: 19:07:53 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:53 on Apr 13,2025
-=======
-# End time: 00:13:46 on Apr 12,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:46 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v 
 # -- Compiling module ESM_Core_IIM
 # 
 # Top level modules:
 # 	ESM_Core_IIM
-<<<<<<< HEAD
 # End time: 19:07:53 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/CandidateList.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:53 on Apr 13,2025
-=======
-# End time: 00:13:46 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/CandidateList.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:46 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/CandidateList.v 
 # -- Compiling module CandidateList
 # 
 # Top level modules:
 # 	CandidateList
-<<<<<<< HEAD
 # End time: 19:07:53 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:53 on Apr 13,2025
-=======
-# End time: 00:13:46 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:46 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v 
 # -- Compiling module MappingTable
 # 
 # Top level modules:
 # 	MappingTable
-<<<<<<< HEAD
 # End time: 19:07:53 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/PRNG.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 19:07:53 on Apr 13,2025
-=======
-# End time: 00:13:46 on Apr 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/PRNG.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:13:46 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/PRNG.v 
 # -- Compiling module PRNG
 # 
 # Top level modules:
 # 	PRNG
-<<<<<<< HEAD
 # End time: 19:07:53 on Apr 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/Synchronizer.v}
@@ -215,37 +130,22 @@
 # Top level modules:
 # 	Synchronizer
 # End time: 19:07:54 on Apr 13,2025, Elapsed time: 0:00:01
-=======
-# End time: 00:13:46 on Apr 12,2025, Elapsed time: 0:00:00
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test {C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-<<<<<<< HEAD
 # Start time: 19:07:54 on Apr 13,2025
-=======
-# Start time: 00:13:46 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test" C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-<<<<<<< HEAD
 # End time: 19:07:54 on Apr 13,2025, Elapsed time: 0:00:00
-=======
-# End time: 00:13:46 on Apr 12,2025, Elapsed time: 0:00:00
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-<<<<<<< HEAD
 # Start time: 19:07:54 on Apr 13,2025
-=======
-# Start time: 00:13:46 on Apr 12,2025
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # Loading work.tb
 # Loading work.ESM
 # Loading work.InstructionBuffer
@@ -266,11 +166,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
 # ---- Starting Simulation at time 25000 ----
-<<<<<<< HEAD
 # I0
 # I2
 # I4
@@ -298,89 +194,9 @@
 add wave -position insertpoint  \
 sim:/tb/UUT/Core/independent_instr
 run
-=======
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Instruction I0 is being executed
-# Instruction I1 is being executed
-# Instruction I2 is being executed
-# Instruction I3 is being executed
-# Instruction I4 is being executed
-# Instruction I5 is being executed
-# Instruction I6 is being executed
-# Instruction I7 is being executed
-# Instruction I8 is being executed
-# Instruction I9 is being executed
-# Instruction I10 is being executed
-# Instruction I11 is being executed
-# Instruction I12 is being executed
-# Instruction I13 is being executed
-# Instruction I14 is being executed
-# Instruction I15 is being executed
-# Instruction I16 is being executed
-# Instruction I17 is being executed
-# Instruction I18 is being executed
-# Instruction I19 is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# ---- Simulation complete at time 425000 ----
-# ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(152)
-#    Time: 425 ns  Iteration: 0  Instance: /tb
-# Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 152
-add wave -position insertpoint  \
-sim:/tb/UUT/buffer_index
-add wave -position insertpoint  \
-sim:/tb/UUT/valid_entries
-add wave -position insertpoint  \
-sim:/tb/UUT/Buffer/Instr_buffer
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/next_buffer_index
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/IDA/bufer_index_synchronizer
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/IDA/current_dept
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/IDA/independent_instr
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/IDA/rd \
-sim:/tb/UUT/Core/IDA/rs1 \
-sim:/tb/UUT/Core/IDA/rs2
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/IDA/irt_table/IRT_RD \
-sim:/tb/UUT/Core/IDA/irt_table/IRT_RS
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/IDA/irt_table/raw \
-sim:/tb/UUT/Core/IDA/irt_table/war \
-sim:/tb/UUT/Core/IDA/irt_table/waw
-add wave -position insertpoint  \
-sim:/tb/UUT/Core/IDA/idt_table/idt
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 restart
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
 # ---- Starting Simulation at time 25000 ----
-<<<<<<< HEAD
 # I0
 # I2
 # I4
@@ -406,51 +222,4 @@ run -all
 #    Time: 625 ns  Iteration: 0  Instance: /tb
 # Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 151
 # End time: 19:11:32 on Apr 13,2025, Elapsed time: 0:03:38
-=======
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Instruction I0 is being executed
-# Instruction I1 is being executed
-# Instruction I2 is being executed
-# Instruction I3 is being executed
-# Instruction I4 is being executed
-# Instruction I5 is being executed
-# Instruction I6 is being executed
-# Instruction I7 is being executed
-# Instruction I8 is being executed
-# Instruction I9 is being executed
-# Instruction I10 is being executed
-# Instruction I11 is being executed
-# Instruction I12 is being executed
-# Instruction I13 is being executed
-# Instruction I14 is being executed
-# Instruction I15 is being executed
-# Instruction I16 is being executed
-# Instruction I17 is being executed
-# Instruction I18 is being executed
-# Instruction I19 is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# Random Instruction is being executed
-# ---- Simulation complete at time 425000 ----
-# ** Note: $stop    : C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v(152)
-#    Time: 425 ns  Iteration: 0  Instance: /tb
-# Break in Module tb at C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/.test/tb.v line 152
-# End time: 00:20:07 on Apr 12,2025, Elapsed time: 0:06:21
->>>>>>> parent of d1c287a (valid_entires synchronizer)
 # Errors: 0, Warnings: 0
