@@ -1,5 +1,9 @@
 Analysis & Synthesis report for ESM
+<<<<<<< HEAD
 Sun Apr 13 19:07:40 2025
+=======
+Sat Apr 12 00:13:10 2025
+>>>>>>> parent of d1c287a (valid_entires synchronizer)
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -67,7 +71,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status     ; Successful - Sun Apr 13 19:07:40 2025       ;
+=======
+; Analysis & Synthesis Status     ; Successful - Sat Apr 12 00:13:10 2025       ;
+>>>>>>> parent of d1c287a (valid_entires synchronizer)
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
@@ -754,7 +762,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Sun Apr 13 19:07:28 2025
+=======
+    Info: Processing started: Sat Apr 12 00:13:02 2025
+>>>>>>> parent of d1c287a (valid_entires synchronizer)
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -786,12 +798,19 @@ Info (12127): Elaborating entity "ESM" for the top level hierarchy
 Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:Buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 27
 Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 29
 Info (12128): Elaborating entity "ESM_Core_IDA" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 16
+<<<<<<< HEAD
 Info (12128): Elaborating entity "Synchronizer" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_1" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 25
 Info (12128): Elaborating entity "Synchronizer" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_2" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 26
 Info (12128): Elaborating entity "IRT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 28
 Warning (10240): Verilog HDL Always Construct warning at IRT.v(31): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 31
 Warning (10240): Verilog HDL Always Construct warning at IRT.v(42): inferring latch(es) for variable "j", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 42
 Info (12128): Elaborating entity "IDT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 29
+=======
+Info (12128): Elaborating entity "IRT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 27
+Warning (10240): Verilog HDL Always Construct warning at IRT.v(31): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 31
+Warning (10240): Verilog HDL Always Construct warning at IRT.v(42): inferring latch(es) for variable "j", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 42
+Info (12128): Elaborating entity "IDT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 28
+>>>>>>> parent of d1c287a (valid_entires synchronizer)
 Info (12128): Elaborating entity "ESM_Core_IIM" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 18
 Info (12128): Elaborating entity "CandidateList" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 23
 Info (12128): Elaborating entity "MappingTable" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 25
@@ -859,10 +878,18 @@ Info (21057): Implemented 3091 device resources after synthesis - the final reso
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 2991 logic cells
     Info (21064): Implemented 32 RAM segments
+<<<<<<< HEAD
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 4851 megabytes
     Info: Processing ended: Sun Apr 13 19:07:40 2025
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:22
+=======
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Sat Apr 12 00:13:10 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
+>>>>>>> parent of d1c287a (valid_entires synchronizer)
 
 
