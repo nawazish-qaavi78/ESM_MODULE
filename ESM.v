@@ -20,7 +20,7 @@ module ESM #(
 	
 	always@(posedge clk, posedge rst) begin
 		if(rst) buffer_index <= 0;
-//		else if(valid_count && proceed) buffer_index <= next_buffer_index;
+		else if(valid_count && proceed) buffer_index <= next_buffer_index;
 		else buffer_index <= buffer_index + 1'b1;	
 	end	
 		

@@ -266,6 +266,14 @@
 				{
 					"name" : "rst",
 					"strict" : false
+				},
+				{
+					"name" : "RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "ALUSrc",
+					"strict" : false
 				}
 			]
 		}
