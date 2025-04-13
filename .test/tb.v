@@ -152,6 +152,7 @@ module tb;
   end
 
   always @(negedge clk ) begin
+<<<<<<< HEAD
     case (Instr_out)
       I0: $display("I0");
       I1: $display("I1");
@@ -174,6 +175,31 @@ module tb;
       I18: $display("I18");
       I19: $display("I19");
     endcase
+=======
+	case (Instr_out)
+		I0: $display("Instruction I0 is being executed");
+		I1: $display("Instruction I1 is being executed");
+		I2: $display("Instruction I2 is being executed");
+		I3: $display("Instruction I3 is being executed");
+		I4: $display("Instruction I4 is being executed");
+		I5: $display("Instruction I5 is being executed");
+		I6: $display("Instruction I6 is being executed");
+		I7: $display("Instruction I7 is being executed");
+		I8: $display("Instruction I8 is being executed");
+		I9: $display("Instruction I9 is being executed");
+		I10: $display("Instruction I10 is being executed");
+		I11: $display("Instruction I11 is being executed");
+		I12: $display("Instruction I12 is being executed");
+		I13: $display("Instruction I13 is being executed");
+		I14: $display("Instruction I14 is being executed");
+		I15: $display("Instruction I15 is being executed");
+		I16: $display("Instruction I16 is being executed");
+		I17: $display("Instruction I17 is being executed");
+		I18: $display("Instruction I18 is being executed");
+		I19: $display("Instruction I19 is being executed");
+		default: $display("Random Instruction is being executed");
+	endcase
+>>>>>>> parent of d1c287a (valid_entires synchronizer)
   end
 
 endmodule
