@@ -19,13 +19,13 @@ module ESM_Core_IDA #(
 	wire [reg_addr_bits-1:0] rs1 = Instr_in[19:15];
 	wire [reg_addr_bits-1:0] rs2 = ALUSrc ? {reg_addr_bits{1'b0}}: Instr_in[24:20]; // when alusrc is 0 we use the rs2
 
-	wire [bs_bits-1:0] bufer_index_synchronizer; 
+	wire [bs_bits-1:0] buffer_index_synchronizer; 
 	wire [0:bs-1] valid_entries_synchronizer;
 	
-	Synchronizer #(bs_bits) synchronizer_1 (clk, rst, buffer_index, bufer_index_synchronizer);
+	Synchronizer #(bs_bits) synchronizer_1 (clk, rst, buffer_index, buffer_index_synchronizer);
 	Synchronizer #(bs) synchronizer_2 (clk, rst, valid_entries, valid_entries_synchronizer);
 	
 	IRT #(bs, regnum) irt_table (clk, rst, buffer_index, rd, rs1, rs2, current_dept);
-	IDT #(bs) idt_table (clk, rst, bufer_index_synchronizer, current_dept, valid_entries_synchronizer, independent_instr);
+	IDT #(bs) idt_table (clk, rst, buffer_index_synchronizer, current_dept, valid_entries_synchronizer, independent_instr);
 
 endmodule

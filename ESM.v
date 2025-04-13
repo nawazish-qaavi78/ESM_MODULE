@@ -26,7 +26,7 @@ module ESM #(
 		
 	InstructionBuffer #(Instruction_word_size, bs) Buffer (clk, rst, Instr_in, buffer_index, Instr_out);
 	
-	ESM_Core #(Instruction_word_size, bs, regnum) Core (Instr_in, clk, rst, RegWrite, ALUSrc, buffer_index, valid_entries, next_buffer_index, valid_count);
+	ESM_Core #(Instruction_word_size, bs, regnum) Core (Instr_in, clk, rst, RegWrite, ALUSrc, proceed, buffer_index, valid_entries, next_buffer_index, valid_count);
 	 
 	BufferValidator #(Instruction_word_size, bs) Validator (clk, rst, Instr_in, buffer_index, valid_entries); // made a separate module for this register just so it is easier to understand when viewed in netlist viewer
 	

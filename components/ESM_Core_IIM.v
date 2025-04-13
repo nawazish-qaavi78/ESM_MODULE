@@ -1,8 +1,9 @@
 module ESM_Core_IIM #(
 	parameter bs = 16
 ) (
-	input clk, rst,
+	input clk, rst, proceed,
 	input [0:bs-1] independent_instr,
+	input [$clog2(bs)-1: 0] buffer_index,
 	output [$clog2(bs)-1:0] next_buffer_index,
 	output valid_count
 );
@@ -13,9 +14,16 @@ module ESM_Core_IIM #(
 	
 	wire [bs_bits-1: 0] random_number;
 	
+	wire [bs_bits-1: 0] buffer_index_synchronizer_1, buffer_index_synchronizer_2;
+	
+	Synchronizer #(bs_bits) synchronizer_1 (clk, rst, buffer_index, buffer_index_synchronizer_1);
+	Synchronizer #(bs_bits) synchronizer_2 (clk, rst, buffer_index_synchronizer_1, buffer_index_synchronizer_2);
+	
 	CandidateList #(bs) list (clk, rst, independent_instr, candidate_list); // for synchronization
 
-	MappingTable #(bs) mapping_table (clk, rst, candidate_list, random_number, next_buffer_index, valid_count);
+	MappingTable #(bs) mapping_table (clk, rst, proceed, candidate_list, buffer_index, 
+												buffer_index_synchronizer_1, buffer_index_synchronizer_2, 
+												random_number, next_buffer_index, valid_count);
 	
 	PRNG #(bs) prng (clk, rst, random_number);
 	
