@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at MappingTable.v(17): always construct contains both blocking and non-blocking assignments File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v Line: 17
+Info (10281): Verilog HDL Declaration information at ESM_Core_IIM.v(13): object "candidate_list" differs only in case from object "Candidate_List" in the same scope File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 13

@@ -12,9 +12,7 @@ module InstructionBuffer #(
 	
 	always@(posedge clk) begin
 		Instr_buffer[buffer_index] <= Instr_in;
-	end
-	
-	always@(posedge clk) 
-		Instr_out <= Instr_buffer[buffer_index];
+		Instr_out                  <= Instr_buffer[buffer_index];
+	end		
 	
 endmodule

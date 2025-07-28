@@ -19,7 +19,7 @@ module ESM_Core_IIM #(
 	Synchronizer #(bs_bits) synchronizer_1 (clk, rst, buffer_index, buffer_index_synchronizer_1);
 	Synchronizer #(bs_bits) synchronizer_2 (clk, rst, buffer_index_synchronizer_1, buffer_index_synchronizer_2);
 	
-	CandidateList #(bs) list (clk, rst, independent_instr, candidate_list); // for synchronization
+	Synchronizer #(bs) Candidate_List (clk, rst, independent_instr, candidate_list);
 
 	MappingTable #(bs) mapping_table (clk, rst, proceed, candidate_list, buffer_index, 
 												buffer_index_synchronizer_1, buffer_index_synchronizer_2, 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESM
-Sun Apr 13 22:10:05 2025
+Mon Jul 28 10:38:05 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -31,7 +31,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  23. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM
  24. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:synchronizer_1
  25. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:synchronizer_2
- 26. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list
+ 26. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:Candidate_List
  27. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table
  28. Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng
  29. Parameter Settings for User Entity Instance: BufferValidator:Validator
@@ -41,6 +41,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  33. Post-Synthesis Netlist Statistics for Top Partition
  34. Elapsed Time Per Partition
  35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -67,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Apr 13 22:10:05 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jul 28 10:38:05 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
@@ -206,7 +207,6 @@ https://fpgasoftware.intel.com/eula.
 ; components/IDT.v                 ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IDT.v               ;         ;
 ; components/BufferValidator.v     ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/BufferValidator.v   ;         ;
 ; components/ESM_Core_IIM.v        ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v      ;         ;
-; components/CandidateList.v       ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/CandidateList.v     ;         ;
 ; components/MappingTable.v        ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v      ;         ;
 ; components/PRNG.v                ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/PRNG.v              ;         ;
 ; components/Synchronizer.v        ; yes             ; User Verilog HDL File        ; C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/Synchronizer.v      ;         ;
@@ -271,13 +271,13 @@ https://fpgasoftware.intel.com/eula.
 ;          |IRT:irt_table|                        ; 800 (800)           ; 992 (992)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table                                                                                                              ; IRT                 ; work         ;
 ;          |Synchronizer:synchronizer_2|          ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_2                                                                                                ; Synchronizer        ; work         ;
 ;       |ESM_Core_IIM:IIM|                        ; 508 (0)             ; 124 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM                                                                                                                            ; ESM_Core_IIM        ; work         ;
-;          |CandidateList:list|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list                                                                                                         ; CandidateList       ; work         ;
 ;          |MappingTable:mapping_table|           ; 473 (446)           ; 68 (68)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table                                                                                                 ; MappingTable        ; work         ;
 ;             |lpm_divide:Mod0|                   ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;                |lpm_divide_42m:auto_generated|  ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
 ;                   |sign_div_unsign_7kh:divider| ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
 ;                      |alt_u_div_kse:divider|    ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
 ;          |PRNG:prng|                            ; 35 (35)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng                                                                                                                  ; PRNG                ; work         ;
+;          |Synchronizer:Candidate_List|          ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:Candidate_List                                                                                                ; Synchronizer        ; work         ;
 ;          |Synchronizer:synchronizer_1|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:synchronizer_1                                                                                                ; Synchronizer        ; work         ;
 ;          |Synchronizer:synchronizer_2|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:synchronizer_2                                                                                                ; Synchronizer        ; work         ;
 ;    |InstructionBuffer:Buffer|                   ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |ESM|InstructionBuffer:Buffer                                                                                                                                  ; InstructionBuffer   ; work         ;
@@ -569,13 +569,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; bs             ; 16    ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:Candidate_List ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -751,7 +751,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -761,7 +761,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Apr 13 22:09:52 2025
+    Info: Processing started: Mon Jul 28 10:37:52 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -800,7 +800,6 @@ Warning (10240): Verilog HDL Always Construct warning at IRT.v(31): inferring la
 Warning (10240): Verilog HDL Always Construct warning at IRT.v(42): inferring latch(es) for variable "j", which holds its previous value in one or more paths through the always construct File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/IRT.v Line: 42
 Info (12128): Elaborating entity "IDT" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 29
 Info (12128): Elaborating entity "ESM_Core_IIM" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 18
-Info (12128): Elaborating entity "CandidateList" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|CandidateList:list" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 22
 Info (12128): Elaborating entity "MappingTable" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 26
 Warning (10230): Verilog HDL assignment warning at MappingTable.v(30): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v Line: 30
 Info (12128): Elaborating entity "PRNG" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 28
@@ -856,6 +855,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
     Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/db/alt_u_div_kse.tdf Line: 23
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/output_files/ESM.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 2810 device resources after synthesis - the final resource count might be different
@@ -864,9 +864,15 @@ Info (21057): Implemented 2810 device resources after synthesis - the final reso
     Info (21061): Implemented 2710 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4852 megabytes
-    Info: Processing ended: Sun Apr 13 22:10:05 2025
+    Info: Peak virtual memory: 4854 megabytes
+    Info: Processing ended: Mon Jul 28 10:38:05 2025
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/output_files/ESM.map.smsg.
 
 
