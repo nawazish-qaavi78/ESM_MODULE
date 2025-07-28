@@ -89,6 +89,5 @@ This design avoids premature execution and hazards by ensuring the system is ful
 |-----------------------------|-----------------------------------------------------------------------------|
 | Issuing Protocol            | Improve balancing of throughput vs correctness.                            |
 | Register Independence       | Replace `register_address = 0` heuristic for better clarity and scalability.|
-| Candidate List Synchronizer| Simplify/remove to streamline control logic.                                |
 | Index Mapping Optimization  | Remove `modulo` operation (e.g., use power-of-two buffer sizes, direct hashing). |
 

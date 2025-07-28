@@ -417,11 +417,11 @@ valid_entries[3] => valid_entries[3].IN1
 valid_entries[2] => valid_entries[2].IN1
 valid_entries[1] => valid_entries[1].IN1
 valid_entries[0] => valid_entries[0].IN1
-next_buffer_index[0] <= ESM_Core_IIM:IIM.port5
-next_buffer_index[1] <= ESM_Core_IIM:IIM.port5
-next_buffer_index[2] <= ESM_Core_IIM:IIM.port5
-next_buffer_index[3] <= ESM_Core_IIM:IIM.port5
-valid_count <= ESM_Core_IIM:IIM.port6
+next_buffer_index[0] <= ESM_Core_IIM:IIM.port6
+next_buffer_index[1] <= ESM_Core_IIM:IIM.port6
+next_buffer_index[2] <= ESM_Core_IIM:IIM.port6
+next_buffer_index[3] <= ESM_Core_IIM:IIM.port6
+valid_count <= ESM_Core_IIM:IIM.port7
 
 
 |ESM|ESM_Core:Core|ESM_Core_IDA:IDA
@@ -505,6 +505,10 @@ independent_instr[3] <= IDT:idt_table.port5
 independent_instr[2] <= IDT:idt_table.port5
 independent_instr[1] <= IDT:idt_table.port5
 independent_instr[0] <= IDT:idt_table.port5
+buffer_index_synchronizer[0] <= buffer_index_synchronizer[0].DB_MAX_OUTPUT_PORT_TYPE
+buffer_index_synchronizer[1] <= buffer_index_synchronizer[1].DB_MAX_OUTPUT_PORT_TYPE
+buffer_index_synchronizer[2] <= buffer_index_synchronizer[2].DB_MAX_OUTPUT_PORT_TYPE
+buffer_index_synchronizer[3] <= buffer_index_synchronizer[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_1
@@ -3934,8 +3938,8 @@ independent_instr[0] <= independent_instr.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ESM|ESM_Core:Core|ESM_Core_IIM:IIM
-clk => clk.IN5
-rst => rst.IN5
+clk => clk.IN4
+rst => rst.IN4
 proceed => proceed.IN1
 independent_instr[15] => independent_instr[15].IN1
 independent_instr[14] => independent_instr[14].IN1
@@ -3953,34 +3957,19 @@ independent_instr[3] => independent_instr[3].IN1
 independent_instr[2] => independent_instr[2].IN1
 independent_instr[1] => independent_instr[1].IN1
 independent_instr[0] => independent_instr[0].IN1
-buffer_index[0] => buffer_index[0].IN2
-buffer_index[1] => buffer_index[1].IN2
-buffer_index[2] => buffer_index[2].IN2
-buffer_index[3] => buffer_index[3].IN2
+buffer_index[0] => buffer_index[0].IN1
+buffer_index[1] => buffer_index[1].IN1
+buffer_index[2] => buffer_index[2].IN1
+buffer_index[3] => buffer_index[3].IN1
+buffer_index_synchronizer_1[0] => buffer_index_synchronizer_1[0].IN2
+buffer_index_synchronizer_1[1] => buffer_index_synchronizer_1[1].IN2
+buffer_index_synchronizer_1[2] => buffer_index_synchronizer_1[2].IN2
+buffer_index_synchronizer_1[3] => buffer_index_synchronizer_1[3].IN2
 next_buffer_index[0] <= MappingTable:mapping_table.port8
 next_buffer_index[1] <= MappingTable:mapping_table.port8
 next_buffer_index[2] <= MappingTable:mapping_table.port8
 next_buffer_index[3] <= MappingTable:mapping_table.port8
 valid_count <= MappingTable:mapping_table.port9
-
-
-|ESM|ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:synchronizer_1
-clk => out[0]~reg0.CLK
-clk => out[1]~reg0.CLK
-clk => out[2]~reg0.CLK
-clk => out[3]~reg0.CLK
-rst => out[0]~reg0.ACLR
-rst => out[1]~reg0.ACLR
-rst => out[2]~reg0.ACLR
-rst => out[3]~reg0.ACLR
-in[0] => out[0]~reg0.DATAIN
-in[1] => out[1]~reg0.DATAIN
-in[2] => out[2]~reg0.DATAIN
-in[3] => out[3]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ESM|ESM_Core:Core|ESM_Core_IIM:IIM|Synchronizer:synchronizer_2

@@ -3,7 +3,7 @@ module ESM_Core_IIM #(
 ) (
 	input clk, rst, proceed,
 	input [0:bs-1] independent_instr,
-	input [$clog2(bs)-1: 0] buffer_index,
+	input [$clog2(bs)-1: 0] buffer_index, buffer_index_synchronizer_1,
 	output [$clog2(bs)-1:0] next_buffer_index,
 	output valid_count
 );
@@ -14,9 +14,8 @@ module ESM_Core_IIM #(
 	
 	wire [bs_bits-1: 0] random_number;
 	
-	wire [bs_bits-1: 0] buffer_index_synchronizer_1, buffer_index_synchronizer_2;
+	wire [bs_bits-1: 0] buffer_index_synchronizer_2;
 	
-	Synchronizer #(bs_bits) synchronizer_1 (clk, rst, buffer_index, buffer_index_synchronizer_1);
 	Synchronizer #(bs_bits) synchronizer_2 (clk, rst, buffer_index_synchronizer_1, buffer_index_synchronizer_2);
 	
 	Synchronizer #(bs) Candidate_List (clk, rst, independent_instr, candidate_list);

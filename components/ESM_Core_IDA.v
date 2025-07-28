@@ -7,7 +7,8 @@ module ESM_Core_IDA #(
 	input [$clog2(bs)-1:0] buffer_index,
 	input [Instruction_word_size-1:0] Instr_in,
 	input [0:bs-1] valid_entries,
-	output [0:bs-1] independent_instr
+	output [0:bs-1] independent_instr,
+	output [$clog2(bs)-1: 0] buffer_index_synchronizer
 );
 
 	localparam reg_addr_bits = $clog2(regnum);
@@ -19,7 +20,6 @@ module ESM_Core_IDA #(
 	wire [reg_addr_bits-1:0] rs1 = Instr_in[19:15];
 	wire [reg_addr_bits-1:0] rs2 = ALUSrc ? {reg_addr_bits{1'b0}}: Instr_in[24:20]; // when alusrc is 0 we use the rs2
 
-	wire [bs_bits-1:0] buffer_index_synchronizer; 
 	wire [0:bs-1] valid_entries_synchronizer;
 	
 	Synchronizer #(bs_bits) synchronizer_1 (clk, rst, buffer_index, buffer_index_synchronizer);
