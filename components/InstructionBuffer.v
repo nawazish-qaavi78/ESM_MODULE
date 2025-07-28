@@ -16,3 +16,9 @@ module InstructionBuffer #(
 	end		
 	
 endmodule
+
+/*
+note: altsycram:Instr_buffer_rtl_0 and altsyncram_03n1:auto_generated - 
+Quartus (Intel FPGA tools) recognizes your array as a RAM/block RAM candidate and implements it with 
+the altsyncram primitive internally.
+*/

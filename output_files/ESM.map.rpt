@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESM
-Mon Jul 28 20:57:54 2025
+Mon Jul 28 23:38:01 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -67,14 +67,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jul 28 20:57:54 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jul 28 23:38:01 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ESM                                         ;
 ; Top-level Entity Name           ; ESM                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 1392                                        ;
-; Total pins                      ; 68                                          ;
+; Total pins                      ; 69                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 512                                         ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -233,18 +233,18 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1251      ;
+; Estimate of Logic utilization (ALMs needed) ; 1246      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1670      ;
+; Combinational ALUT usage for logic          ; 1668      ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 723       ;
-;     -- 5 input functions                    ; 368       ;
-;     -- 4 input functions                    ; 341       ;
-;     -- <=3 input functions                  ; 238       ;
+;     -- 6 input functions                    ; 716       ;
+;     -- 5 input functions                    ; 370       ;
+;     -- 4 input functions                    ; 340       ;
+;     -- <=3 input functions                  ; 242       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 1392      ;
 ;                                             ;           ;
-; I/O pins                                    ; 68        ;
+; I/O pins                                    ; 69        ;
 ; Total MLAB memory bits                      ; 0         ;
 ; Total block memory bits                     ; 512       ;
 ;                                             ;           ;
@@ -252,7 +252,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 1424      ;
-; Total fan-out                               ; 13543     ;
+; Total fan-out                               ; 13519     ;
 ; Average fan-out                             ; 4.19      ;
 +---------------------------------------------+-----------+
 
@@ -262,12 +262,12 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                            ; Entity Name         ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |ESM                                            ; 1670 (16)           ; 1392 (4)                  ; 512               ; 0          ; 68   ; 0            ; |ESM                                                                                                                                                           ; ESM                 ; work         ;
+; |ESM                                            ; 1668 (11)           ; 1392 (4)                  ; 512               ; 0          ; 69   ; 0            ; |ESM                                                                                                                                                           ; ESM                 ; work         ;
 ;    |BufferValidator:Validator|                  ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|BufferValidator:Validator                                                                                                                                 ; BufferValidator     ; work         ;
-;    |ESM_Core:Core|                              ; 1654 (0)            ; 1372 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core                                                                                                                                             ; ESM_Core            ; work         ;
-;       |ESM_Core_IDA:IDA|                        ; 1146 (10)           ; 1252 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA                                                                                                                            ; ESM_Core_IDA        ; work         ;
+;    |ESM_Core:Core|                              ; 1657 (0)            ; 1372 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core                                                                                                                                             ; ESM_Core            ; work         ;
+;       |ESM_Core_IDA:IDA|                        ; 1149 (10)           ; 1252 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA                                                                                                                            ; ESM_Core_IDA        ; work         ;
 ;          |IDT:idt_table|                        ; 336 (336)           ; 240 (240)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IDT:idt_table                                                                                                              ; IDT                 ; work         ;
-;          |IRT:irt_table|                        ; 800 (800)           ; 992 (992)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table                                                                                                              ; IRT                 ; work         ;
+;          |IRT:irt_table|                        ; 803 (803)           ; 992 (992)                 ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|IRT:irt_table                                                                                                              ; IRT                 ; work         ;
 ;          |Synchronizer:synchronizer_1|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_1                                                                                                ; Synchronizer        ; work         ;
 ;          |Synchronizer:synchronizer_2|          ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_2                                                                                                ; Synchronizer        ; work         ;
 ;       |ESM_Core_IIM:IIM|                        ; 508 (0)             ; 120 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ESM|ESM_Core:Core|ESM_Core_IIM:IIM                                                                                                                            ; ESM_Core_IIM        ; work         ;
@@ -708,26 +708,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 380                         ;
 ;     ENA CLR           ; 1008                        ;
 ;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 1670                        ;
+; arriav_lcell_comb     ; 1668                        ;
 ;     arith             ; 11                          ;
 ;         0 data inputs ; 4                           ;
 ;         5 data inputs ; 7                           ;
-;     normal            ; 1654                        ;
+;     normal            ; 1652                        ;
 ;         1 data inputs ; 31                          ;
-;         2 data inputs ; 116                         ;
-;         3 data inputs ; 84                          ;
-;         4 data inputs ; 339                         ;
-;         5 data inputs ; 361                         ;
-;         6 data inputs ; 723                         ;
+;         2 data inputs ; 117                         ;
+;         3 data inputs ; 87                          ;
+;         4 data inputs ; 338                         ;
+;         5 data inputs ; 363                         ;
+;         6 data inputs ; 716                         ;
 ;     shared            ; 5                           ;
 ;         0 data inputs ; 2                           ;
 ;         2 data inputs ; 1                           ;
 ;         4 data inputs ; 2                           ;
-; boundary_port         ; 68                          ;
+; boundary_port         ; 69                          ;
 ; stratixv_ram_block    ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 17.40                       ;
-; Average LUT depth     ; 7.35                        ;
+; Average LUT depth     ; 7.13                        ;
 +-----------------------+-----------------------------+
 
 
@@ -736,7 +736,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -746,7 +746,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jul 28 20:57:12 2025
+    Info: Processing started: Mon Jul 28 23:37:46 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESM -c ESM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -775,8 +775,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file compone
 Info (12021): Found 1 design units, including 1 entities, in source file components/synchronizer.v
     Info (12023): Found entity 1: Synchronizer File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/Synchronizer.v Line: 1
 Info (12127): Elaborating entity "ESM" for the top level hierarchy
-Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:Buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 27
-Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 29
+Info (12128): Elaborating entity "InstructionBuffer" for hierarchy "InstructionBuffer:Buffer" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 30
+Info (12128): Elaborating entity "ESM_Core" for hierarchy "ESM_Core:Core" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 33
 Info (12128): Elaborating entity "ESM_Core_IDA" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core.v Line: 18
 Info (12128): Elaborating entity "Synchronizer" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_1" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 25
 Info (12128): Elaborating entity "Synchronizer" for hierarchy "ESM_Core:Core|ESM_Core_IDA:IDA|Synchronizer:synchronizer_2" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IDA.v Line: 26
@@ -788,7 +788,7 @@ Info (12128): Elaborating entity "ESM_Core_IIM" for hierarchy "ESM_Core:Core|ESM
 Info (12128): Elaborating entity "MappingTable" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|MappingTable:mapping_table" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 25
 Warning (10230): Verilog HDL assignment warning at MappingTable.v(30): truncated value with size 32 to match size of target (4) File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/MappingTable.v Line: 30
 Info (12128): Elaborating entity "PRNG" for hierarchy "ESM_Core:Core|ESM_Core_IIM:IIM|PRNG:prng" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/components/ESM_Core_IIM.v Line: 27
-Info (12128): Elaborating entity "BufferValidator" for hierarchy "BufferValidator:Validator" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 31
+Info (12128): Elaborating entity "BufferValidator" for hierarchy "BufferValidator:Validator" File: C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/ESM.v Line: 35
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "InstructionBuffer:Buffer|Instr_buffer_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -843,16 +843,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/nawaz/OneDrive/Desktop/programing/verilog/ESM_MODULE/ESM_MODULE/output_files/ESM.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2810 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 36 input pins
+Info (21057): Implemented 2809 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 37 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 2710 logic cells
+    Info (21061): Implemented 2708 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Mon Jul 28 20:57:54 2025
-    Info: Elapsed time: 00:00:42
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Peak virtual memory: 4855 megabytes
+    Info: Processing ended: Mon Jul 28 23:38:01 2025
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

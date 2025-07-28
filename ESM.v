@@ -4,7 +4,7 @@ module ESM #(
 				 regnum = 32
 ) (
 	input [Instruction_word_size-1:0] Instr_in,
-	input clk, rst, RegWrite, ALUSrc,
+	input clk, rst, RegWrite, ALUSrc, valid_flag, 
 	output [Instruction_word_size-1:0] Instr_out
 );
 	localparam bs_bits = $clog2(bs);
@@ -15,8 +15,11 @@ module ESM #(
 	wire valid_count;
 	
 	wire [0:bs-1] valid_entries;
+	wire instr_is_empty = ~valid_flag;
+	// generally in modern cpu arch, the bus is disconnected using a tri-state buffer, ie, it is z when invalid
+	// there is another line that verifies the validity of input instruction, i.e, valid_flag
 	
-	wire proceed = (~(|Instr_in)) || (&valid_entries); // either when incoming instructions are 0, ie, all instructions are complete or when the buffer is full start executing
+	wire proceed = instr_is_empty || (&valid_entries); // either when incoming instructions are 0, ie, all instructions are complete or when the buffer is full start executing
 	
 	always@(posedge clk, posedge rst) begin
 		if(rst) buffer_index <= 0;
@@ -26,9 +29,10 @@ module ESM #(
 		
 	InstructionBuffer #(Instruction_word_size, bs) Buffer (clk, rst, Instr_in, buffer_index, Instr_out);
 	
-	ESM_Core #(Instruction_word_size, bs, regnum) Core (Instr_in, clk, rst, RegWrite, ALUSrc, proceed, buffer_index, valid_entries, next_buffer_index, valid_count);
+	ESM_Core #(Instruction_word_size, bs, regnum) Core (Instr_in, clk, rst, RegWrite, ALUSrc, proceed, 
+																		buffer_index, valid_entries, next_buffer_index, valid_count);
 	 
-	BufferValidator #(Instruction_word_size, bs) Validator (clk, rst, Instr_in, buffer_index, valid_entries); // made a separate module for this register just so it is easier to understand when viewed in netlist viewer
+	BufferValidator #(Instruction_word_size, bs) Validator (clk, rst, valid_flag, buffer_index, valid_entries); // made a separate module for this register just so it is easier to understand when viewed in netlist viewer
 	
 
 endmodule

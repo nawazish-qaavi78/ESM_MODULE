@@ -264,6 +264,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "valid_flag",
+					"strict" : false
+				},
+				{
 					"name" : "rst",
 					"strict" : false
 				},
