@@ -92,8 +92,3 @@ This design avoids premature execution and hazards by ensuring the system is ful
 | Candidate List Synchronizer| Simplify/remove to streamline control logic.                                |
 | Index Mapping Optimization  | Remove `modulo` operation (e.g., use power-of-two buffer sizes, direct hashing). |
 
----
-
-## License
-
-MIT License or project-specific license as applicable.
