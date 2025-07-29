@@ -34,7 +34,6 @@ Composed of two submodules:
 - **IRT (Instruction Register Tracker)**
   - Tracks source/destination register dependencies.
   - Uses bitmasks (`1 << reg_address`) for tracking register usage.
-  - Treats `register 0` as independent (does not contribute to dependency).
   - Outputs a dependency mask for each instruction.
 
 - **IDT (Instruction Dependency Table)**
