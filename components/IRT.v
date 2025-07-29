@@ -4,14 +4,15 @@ module IRT #(
 ) (
 	input clk, rst,
 	input [$clog2(bs)-1:0] buffer_index,
+	input RegWrite, ALUSrc,
 	input [$clog2(regnum)-1:0] rd, rs1, rs2,
 	output [0:bs-1] current_dept
 );
 
-	integer i;
-	integer j;
-	
-	wire [regnum-1:0] current_rs = (rs1 ? {1<<rs1} : {regnum{1'b0}}) | (rs2 ? {1<<rs2} : {regnum{1'b0}});
+	integer i, j;
+
+	wire [regnum-1:0] current_rs =  {1<<rs1} | (ALUSrc ? {regnum{1'b0}} : {1<<rs2});
+	wire [regnum-1:0] current_rd =  RegWrite? {1<<rd} : {regnum{1'b0}};
 	
 	reg [regnum-1:0] IRT_RD [0:bs-1];
 	reg [regnum-1:0] IRT_RS [0:bs-1];
@@ -33,7 +34,7 @@ module IRT #(
 			IRT_RD[i] <= {(regnum){1'b0}};
 			IRT_RS[i] <= {(regnum){1'b0}};
 		end else begin
-			IRT_RD[buffer_index] <= rd ? {1<<rd} : {regnum{1'b0}};
+			IRT_RD[buffer_index] <= current_rd;
 			IRT_RS[buffer_index] <= current_rs;
 		end
 	end

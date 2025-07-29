@@ -272,11 +272,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "ALUSrc",
+					"name" : "RegWrite",
 					"strict" : false
 				},
 				{
-					"name" : "RegWrite",
+					"name" : "ALUSrc",
 					"strict" : false
 				}
 			]

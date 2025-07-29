@@ -44,6 +44,6 @@ module MappingTable #(
 		next_buffer_index_copy <= next_buffer_index;
 	
 	assign next_buffer_index = count ? (mapping_table[random_number%count]) : 1'b0;
-	assign valid_count = count? 1'b1 : 1'b0;
+	assign valid_count = |count;
 
 endmodule
